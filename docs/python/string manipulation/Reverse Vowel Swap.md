@@ -90,7 +90,7 @@ def reverse_vowels(S: str) -> str:
 
 # Test cases
 print(reverse_vowels("hello world"))  # Output: "holle werld"
-print(reverse_vowels("Coding"))   # Output: "HeckarRonk"
+print(reverse_vowels("Coding"))   # Output: "Cidong"
 print(reverse_vowels("Programming is fun!"))  # Output: "Prigrammong os fun!"
 ```
 
