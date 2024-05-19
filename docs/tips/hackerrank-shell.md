@@ -97,7 +97,7 @@ zcat
 ```
 
 ###/usr/bin
-```
+```yaml
 [
 [[
 awk
