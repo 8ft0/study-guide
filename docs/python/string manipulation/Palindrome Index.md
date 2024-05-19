@@ -1,4 +1,4 @@
-## HackerRank Challenge: Palindrome Index
+## Coding Challenge: Palindrome Index
 
 ### Problem Statement
 

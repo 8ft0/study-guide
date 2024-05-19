@@ -1,4 +1,4 @@
-## HackerRank Challenge: Count Palindromic Subsequences
+## Coding Challenge: Count Palindromic Subsequences
 
 ### Problem Statement
 

@@ -1,4 +1,4 @@
-## HackerRank Challenge: Reverse Vowel Swap
+## Coding Challenge: Reverse Vowel Swap
 
 ### Problem Statement
 
@@ -43,7 +43,7 @@ def reverse_vowels(S: str) -> str:
 
 ### Sample Input 1
 ```
-HackerRank
+Coding
 ```
 
 ### Sample Output 1
@@ -90,7 +90,7 @@ def reverse_vowels(S: str) -> str:
 
 # Test cases
 print(reverse_vowels("hello world"))  # Output: "holle werld"
-print(reverse_vowels("HackerRank"))   # Output: "HeckarRonk"
+print(reverse_vowels("Coding"))   # Output: "HeckarRonk"
 print(reverse_vowels("Programming is fun!"))  # Output: "Prigrammong os fun!"
 ```
 

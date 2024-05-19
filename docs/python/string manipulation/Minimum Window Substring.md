@@ -1,4 +1,4 @@
-## HackerRank Challenge: Minimum Window Substring
+## Coding Challenge: Minimum Window Substring
 
 ### Problem Statement
 

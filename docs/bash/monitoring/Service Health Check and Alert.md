@@ -1,7 +1,7 @@
-## Challenge Name: TikTok Service Health Check and Alert
+## Challenge Name: Acme Service Health Check and Alert
 
 ### Description:
-You are an SRE (Site Reliability Engineer) at TikTok, responsible for maintaining the health of various services. Your task is to write a bash script that checks the health of a specified service by making HTTP requests to its health endpoint, logs the response times, and sends an alert email if the response time exceeds a certain threshold.
+You are an SRE (Site Reliability Engineer) at Acme, responsible for maintaining the health of various services. Your task is to write a bash script that checks the health of a specified service by making HTTP requests to its health endpoint, logs the response times, and sends an alert email if the response time exceeds a certain threshold.
 
 ### Requirements:
 1. **Health check**: Make HTTP GET requests to the service's health endpoint at regular intervals.

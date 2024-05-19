@@ -81,7 +81,7 @@ filter {
 output {
   elasticsearch {
     hosts => ["localhost:9200"]
-    index => "tiktok-logs-%{+YYYY.MM.dd}"
+    index => "acme-logs-%{+YYYY.MM.dd}"
   }
   stdout { codec => rubydebug }
 }

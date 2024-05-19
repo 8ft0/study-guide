@@ -89,7 +89,7 @@ Alert: Active users exceeded threshold at 2024-05-16T12:01:00Z with 10500 active
 - Assume the API always returns valid data in the specified format.
 
 ### Submission:
-Submit your Python script file with the name `tiktok_sre_challenge.py`.
+Submit your Python script file with the name `acme_sre_challenge.py`.
 
 ## Solution:
 

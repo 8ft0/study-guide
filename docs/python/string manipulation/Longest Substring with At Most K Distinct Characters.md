@@ -1,4 +1,4 @@
-## HackerRank Challenge: Longest Substring with At Most K Distinct Characters
+## Coding Challenge: Longest Substring with At Most K Distinct Characters
 
 ### Problem Statement
 

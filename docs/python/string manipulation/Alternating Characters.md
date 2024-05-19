@@ -1,4 +1,4 @@
-## HackerRank Challenge: Alternating Characters
+## Coding Challenge: Alternating Characters
 
 ### Problem Statement
 

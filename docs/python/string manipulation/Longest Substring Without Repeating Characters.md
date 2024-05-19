@@ -1,4 +1,4 @@
-## HackerRank Challenge: Longest Substring Without Repeating Characters
+## Coding Challenge: Longest Substring Without Repeating Characters
 
 ### Problem Statement
 

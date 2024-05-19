@@ -1,4 +1,4 @@
-## HackerRank Challenge: Anagram Difference
+## Coding Challenge: Anagram Difference
 
 ### Problem Statement
 
