@@ -1,16 +1,16 @@
 site_name: CheatSheets
 theme:
   name: material
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
+  # features:
+  #   - navigation.tabs
+  #   - navigation.sections
+  #   - toc.integrate
+  #   # - navigation.top
+  #   - search.suggest
+  #   - search.highlight
+  #   - content.tabs.link
+  #   - content.code.annotation
+  #   - content.code.copy
   language: en
   palette:
     - scheme: default
@@ -33,11 +33,11 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
+      link: https://github.com/8ft0
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
+      link: https://twitter.com/8ft0
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/willettjames/     
+      link: https://www.linkedin.com/in/janvarga/    
 
 
 markdown_extensions:
@@ -56,6 +56,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-      
+
 copyright: |
   &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">James Willett</a>
