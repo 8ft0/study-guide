@@ -1,4 +1,4 @@
-## Coding Challenge: Palindrome Index
+# Palindrome Index
 
 ### Problem Statement
 

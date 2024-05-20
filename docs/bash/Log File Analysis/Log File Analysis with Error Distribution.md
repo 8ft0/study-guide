@@ -1,4 +1,4 @@
-## Challenge Name: Log File Analysis with Error Distribution
+## Log File Analysis with Error Distribution
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that analyses these log files to calculate the distribution of log entries per hour, specifically focusing on `ERROR` log entries. The script should generate a summary report showing the number of `ERROR` entries for each hour of the day.

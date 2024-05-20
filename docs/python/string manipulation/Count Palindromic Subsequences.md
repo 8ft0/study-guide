@@ -1,4 +1,4 @@
-## Coding Challenge: Count Palindromic Subsequences
+# Count Palindromic Subsequences
 
 ### Problem Statement
 

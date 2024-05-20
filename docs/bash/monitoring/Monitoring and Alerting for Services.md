@@ -1,4 +1,4 @@
-## Challenge Name: Monitoring and Alerting for Acme Services
+# Monitoring and Alerting for Acme Services
 
 ### Description:
 As a Site Reliability Engineer (SRE) at Acme, your task is to ensure the smooth operation and performance of Acme's services. You need to create a monitoring and alerting system for a set of microservices to detect and respond to any performance issues or failures in real-time.

@@ -1,4 +1,4 @@
-## Challenge Name: Script-Based User Management
+# Script-Based User Management
 
 ### Description:
 You are tasked with creating a shell script that performs user management operations on a Linux system. The script should be able to add a new user, delete an existing user, and list all users on the system. Each operation should be specified by a command-line argument.

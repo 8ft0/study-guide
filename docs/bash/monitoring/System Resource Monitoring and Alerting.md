@@ -1,4 +1,4 @@
-## Challenge Name: System Resource Monitoring and Alerting
+# System Resource Monitoring and Alerting
 
 ### Description:
 You are required to write a shell script that monitors the system's CPU and memory usage. If the usage exceeds specified thresholds, the script should log an alert message to a file and send an email notification.

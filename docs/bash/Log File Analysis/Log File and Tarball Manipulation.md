@@ -1,4 +1,4 @@
-## Challenge Name: Log File and Tarball Manipulation
+## Log File and Tarball Manipulation
 
 ### Description:
 You are provided with a tarball (`logs.tar.gz`) containing multiple log files. Your task is to write a shell script that extracts the tarball, processes the log files, and generates a summary report.

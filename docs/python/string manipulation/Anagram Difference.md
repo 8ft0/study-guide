@@ -1,4 +1,4 @@
-## Coding Challenge: Anagram Difference
+# Anagram Difference
 
 ### Problem Statement
 

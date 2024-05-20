@@ -1,4 +1,4 @@
-## Coding Challenge: Alternating Characters
+# Alternating Characters
 
 ### Problem Statement
 

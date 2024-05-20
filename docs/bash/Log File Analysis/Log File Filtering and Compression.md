@@ -1,4 +1,4 @@
-## Challenge Name: Log File Filtering and Compression
+## Log File Filtering and Compression
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that filters the log entries based on a specified log level, outputs these filtered entries to a new file, and then compresses this file into a zip archive.

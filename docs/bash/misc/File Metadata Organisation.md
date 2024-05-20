@@ -1,4 +1,4 @@
-## Challenge Name: File Metadata Organisation
+# File Metadata Organisation
 
 ### Description:
 You are given a directory containing various types of files (text files, images, scripts, etc.). Your task is to write a shell script that organises these files based on their file types into subdirectories named after the file type. Additionally, generate a summary report detailing the number of files for each file type.

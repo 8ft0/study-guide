@@ -1,4 +1,4 @@
-## Challenge Name: Disk Space Monitoring Script
+# Disk Space Monitoring Script
 
 ### Description:
 You are tasked with creating a shell script that monitors disk space usage on a system and sends alerts when the usage exceeds a specified threshold. The script should be designed to run periodically and log its activities.

@@ -1,4 +1,4 @@
-## Coding Challenge: Reverse Vowel Swap
+# Reverse Vowel Swap
 
 ### Problem Statement
 

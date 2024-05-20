@@ -1,4 +1,4 @@
-## Coding Challenge: Minimum Window Substring
+# Minimum Window Substring
 
 ### Problem Statement
 

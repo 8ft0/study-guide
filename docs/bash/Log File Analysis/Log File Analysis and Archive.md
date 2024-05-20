@@ -1,4 +1,4 @@
-## Challenge Name: Log File Analysis and Archive
+## Log File Analysis and Archive
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that processes these log files to extract specific information, generates a summary report, and then archives the log files into a tarball.

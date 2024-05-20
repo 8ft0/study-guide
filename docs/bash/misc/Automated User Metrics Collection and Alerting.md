@@ -1,4 +1,4 @@
-## Challenge Name: SRE Challenge: Automated User Metrics Collection and Alerting
+# SRE Challenge: Automated User Metrics Collection and Alerting
 
 ### Description:
 As a Site Reliability Engineer (SRE) at Acme, you need to ensure the platform's stability and performance by monitoring user activity metrics and setting up automated alerts. Your task is to write a Python script that collects user metrics from a simulated API, processes the data to generate insights, and sets up an alerting mechanism for anomalous activity.
