@@ -7,28 +7,28 @@
 #### File Operations
 
 1. **List Files**:
-   - Basic listing:
-     ```sh
-     ls
-     ```
-   - Detailed listing:
-     ```sh
-     ls -l
-     ```
-   - Include hidden files:
-     ```sh
-     ls -a
-     ```
+      - Basic listing:
+      ```sh
+      ls
+      ```
+      - Detailed listing:
+      ```sh
+      ls -l
+      ```
+      - Include hidden files:
+      ```sh
+      ls -a
+      ```
 
 2. **Copy Files**:
-   - Basic copy:
-     ```sh
-     cp <source> <destination>
-     ```
-   - Copy directories recursively:
-     ```sh
-     cp -r <source-dir> <destination-dir>
-     ```
+      - Basic copy:
+      ```sh
+      cp <source> <destination>
+      ```
+      - Copy directories recursively:
+      ```sh
+      cp -r <source-dir> <destination-dir>
+      ```
 
 3. **Move/Rename Files**:
    ```sh
@@ -36,27 +36,27 @@
    ```
 
 4. **Remove Files**:
-   - Basic remove:
-     ```sh
-     rm <file>
-     ```
-   - Remove directories recursively:
-     ```sh
-     rm -r <directory>
-     ```
-   - Force remove:
-     ```sh
-     rm -f <file>
-     ```
+      - Basic remove:
+      ```sh
+      rm <file>
+      ```
+      - Remove directories recursively:
+      ```sh
+      rm -r <directory>
+      ```
+      - Force remove:
+      ```sh
+      rm -f <file>
+      ```
 
 5. **Create Directories**:
-   ```sh
-   mkdir <directory>
-   ```
-   - Create parent directories as needed:
-     ```sh
-     mkdir -p <parent/child-directory>
-     ```
+      ```sh
+      mkdir <directory>
+      ```
+      - Create parent directories as needed:
+      ```sh
+      mkdir -p <parent/child-directory>
+      ```
 
 6. **Remove Directories**:
    ```sh
@@ -64,13 +64,13 @@
    ```
 
 7. **Change File Permissions**:
-   ```sh
-   chmod <permissions> <file>
-   ```
-   - Example to make a file executable:
-     ```sh
-     chmod +x <file>
-     ```
+      ```sh
+      chmod <permissions> <file>
+      ```
+      - Example to make a file executable:
+      ```sh
+      chmod +x <file>
+      ```
 
 8. **Change File Ownership**:
    ```sh
@@ -78,26 +78,26 @@
    ```
 
 9. **Link Files**:
-   - Create a hard link:
-     ```sh
-     ln <target> <link-name>
-     ```
-   - Create a symbolic link:
-     ```sh
-     ln -s <target> <link-name>
-     ```
+      - Create a hard link:
+      ```sh
+      ln <target> <link-name>
+      ```
+      - Create a symbolic link:
+      ```sh
+      ln -s <target> <link-name>
+      ```
 
 #### Text Operations
 
 1. **Display File Contents**:
-   - Basic display:
-     ```sh
-     cat <file>
-     ```
-   - Display with line numbers:
-     ```sh
-     cat -n <file>
-     ```
+      - Basic display:
+      ```sh
+      cat <file>
+      ```
+      - Display with line numbers:
+      ```sh
+      cat -n <file>
+      ```
 
 2. **Concatenate Files**:
    ```sh
@@ -105,31 +105,31 @@
    ```
 
 3. **View File with Paging**:
-   ```sh
-   less <file>
-   ```
-   - Alternative command:
-     ```sh
-     more <file>
-     ```
+      ```sh
+      less <file>
+      ```
+      - Alternative command:
+      ```sh
+      more <file>
+      ```
 
 4. **Search Inside Files**:
-   ```sh
-   grep <pattern> <file>
-   ```
-   - Recursive search:
-     ```sh
-     grep -r <pattern> <directory>
-     ```
+      ```sh
+      grep <pattern> <file>
+      ```
+      - Recursive search:
+      ```sh
+      grep -r <pattern> <directory>
+      ```
 
 5. **Count Lines, Words, Characters**:
-   ```sh
-   wc <file>
-   ```
-   - Count lines only:
-     ```sh
-     wc -l <file>
-     ```
+      ```sh
+      wc <file>
+      ```
+      - Count lines only:
+      ```sh
+      wc -l <file>
+      ```
 
 6. **Sort Lines**:
    ```sh
@@ -147,14 +147,14 @@
    ```
 
 9. **Replace Text in Files**:
-   - Basic replace:
-     ```sh
-     sed 's/<old>/<new>/g' <file>
-     ```
-   - Replace and save changes:
-     ```sh
-     sed -i 's/<old>/<new>/g' <file>
-     ```
+      - Basic replace:
+      ```sh
+      sed 's/<old>/<new>/g' <file>
+      ```
+      - Replace and save changes:
+      ```sh
+      sed -i 's/<old>/<new>/g' <file>
+      ```
 
 #### System Operations
 
@@ -169,33 +169,33 @@
    ```
 
 3. **Display Disk Usage**:
-   - Disk space usage of files and directories:
-     ```sh
-     du -sh <directory>
-     ```
-   - Disk free space:
-     ```sh
-     df -h
-     ```
+      - Disk space usage of files and directories:
+      ```sh
+      du -sh <directory>
+      ```
+      - Disk free space:
+      ```sh
+      df -h
+      ```
 
 4. **Display Process Information**:
-   - List all processes:
-     ```sh
-     ps aux
-     ```
-   - Filter processes by name:
-     ```sh
-     ps aux | grep <process-name>
-     ```
+      - List all processes:
+      ```sh
+      ps aux
+      ```
+      - Filter processes by name:
+      ```sh
+      ps aux | grep <process-name>
+      ```
 
 5. **Terminate a Process**:
-   ```sh
-   kill <PID>
-   ```
-   - Force terminate:
-     ```sh
-     kill -9 <PID>
-     ```
+      ```sh
+      kill <PID>
+      ```
+      - Force terminate:
+      ```sh
+      kill -9 <PID>
+      ```
 
 6. **System Uptime**:
    ```sh

@@ -7,27 +7,27 @@
 #### Backup Basics
 
 1. **Types of Backups**:
-   - **Full Backup**: A complete copy of all data.
-   - **Incremental Backup**: Copies only the data that has changed since the last backup.
-   - **Differential Backup**: Copies all data that has changed since the last full backup.
+      - **Full Backup**: A complete copy of all data.
+      - **Incremental Backup**: Copies only the data that has changed since the last backup.
+      - **Differential Backup**: Copies all data that has changed since the last full backup.
 
 2. **Common Backup Tools**:
-   - `rsync`: Synchronize files and directories.
-   - `tar`: Archive files.
-   - `dd`: Low-level copying and conversion.
-   - `rsnapshot`: Filesystem snapshot utility.
-   - `Bacula`, `Amanda`: Enterprise-level backup solutions.
-   - `Timeshift`: System restore utility.
+      - `rsync`: Synchronize files and directories.
+      - `tar`: Archive files.
+      - `dd`: Low-level copying and conversion.
+      - `rsnapshot`: Filesystem snapshot utility.
+      - `Bacula`, `Amanda`: Enterprise-level backup solutions.
+      - `Timeshift`: System restore utility.
 
-#### Using `rsync` for Backups
+#### `rsync` for Backups
 
 1. **Basic rsync Command**:
-   ```sh
-   rsync -avh /source/directory /destination/directory
-   ```
-   - `-a`: Archive mode (preserves permissions, timestamps, etc.).
-   - `-v`: Verbose output.
-   - `-h`: Human-readable output.
+      ```sh
+      rsync -avh /source/directory /destination/directory
+      ```
+      - `-a`: Archive mode (preserves permissions, timestamps, etc.).
+      - `-v`: Verbose output.
+      - `-h`: Human-readable output.
 
 2. **Using `rsync` Over SSH**:
    ```sh
@@ -39,50 +39,50 @@
    rsync -avh --link-dest=/previous/backup /source/directory /destination/directory
    ```
 
-#### Using `tar` for Backups
+#### `tar` for Backups
 
 1. **Creating a tar Archive**:
-   ```sh
-   tar -cvzf backup.tar.gz /directory/to/backup
-   ```
-   - `-c`: Create a new archive.
-   - `-v`: Verbose output.
-   - `-z`: Compress the archive with gzip.
-   - `-f`: Specify the filename.
+      ```sh
+      tar -cvzf backup.tar.gz /directory/to/backup
+      ```
+      - `-c`: Create a new archive.
+      - `-v`: Verbose output.
+      - `-z`: Compress the archive with gzip.
+      - `-f`: Specify the filename.
 
 2. **Extracting a tar Archive**:
-   ```sh
-   tar -xvzf backup.tar.gz -C /path/to/restore
-   ```
-   - `-x`: Extract files from an archive.
-   - `-C`: Specify the directory to extract files to.
+      ```sh
+      tar -xvzf backup.tar.gz -C /path/to/restore
+      ```
+      - `-x`: Extract files from an archive.
+      - `-C`: Specify the directory to extract files to.
 
 3. **Incremental Backup with `tar`**:
-   - Create a full backup:
-     ```sh
-     tar -cvzf full-backup.tar.gz /directory/to/backup
-     ```
-   - Create an incremental backup:
-     ```sh
-     tar -cvzf incremental-backup.tar.gz --listed-incremental=/path/to/snapshot.file /directory/to/backup
-     ```
+      - Create a full backup:
+      ```sh
+      tar -cvzf full-backup.tar.gz /directory/to/backup
+      ```
+      - Create an incremental backup:
+      ```sh
+      tar -cvzf incremental-backup.tar.gz --listed-incremental=/path/to/snapshot.file /directory/to/backup
+      ```
 
-#### Using `dd` for Backups
+#### `dd` for Backups
 
 1. **Creating a Disk Image**:
-   ```sh
-   dd if=/dev/sdX of=/path/to/backup.img bs=4M
-   ```
-   - `if`: Input file (source device).
-   - `of`: Output file (destination image file).
-   - `bs`: Block size (default is 512 bytes, `4M` for 4 MB blocks).
+      ```sh
+      dd if=/dev/sdX of=/path/to/backup.img bs=4M
+      ```
+      - `if`: Input file (source device).
+      - `of`: Output file (destination image file).
+      - `bs`: Block size (default is 512 bytes, `4M` for 4 MB blocks).
 
 2. **Restoring a Disk Image**:
    ```sh
    dd if=/path/to/backup.img of=/dev/sdX bs=4M
    ```
 
-#### Using `rsnapshot` for Backups
+#### `rsnapshot` for Backups
 
 1. **Install rsnapshot**:
    ```sh
@@ -91,14 +91,14 @@
    ```
 
 2. **Configure rsnapshot**:
-   - Edit the configuration file `/etc/rsnapshot.conf`.
-   - Define backup intervals (hourly, daily, weekly, etc.).
-   - Example configuration snippet:
-     ```conf
-     snapshot_root   /path/to/snapshots/
-     backup  /home/  localhost/
-     backup  /etc/   localhost/
-     ```
+      - Edit the configuration file `/etc/rsnapshot.conf`.
+      - Define backup intervals (hourly, daily, weekly, etc.).
+      - Example configuration snippet:
+      ```conf
+      snapshot_root   /path/to/snapshots/
+      backup  /home/  localhost/
+      backup  /etc/   localhost/
+      ```
 
 3. **Run rsnapshot Backup**:
    ```sh
@@ -107,7 +107,7 @@
    sudo rsnapshot weekly
    ```
 
-#### Using `Timeshift` for System Restore
+#### `Timeshift` for System Restore
 
 1. **Install Timeshift**:
    ```sh
@@ -116,33 +116,33 @@
    ```
 
 2. **Configure Timeshift**:
-   - Launch Timeshift GUI:
-     ```sh
-     sudo timeshift
-     ```
-   - Select the snapshot type (RSYNC/BTRFS) and configure settings.
+      - Launch Timeshift GUI:
+      ```sh
+      sudo timeshift
+      ```
+      - Select the snapshot type (RSYNC/BTRFS) and configure settings.
 
 3. **Create and Restore Snapshots**:
-   - Create a snapshot:
-     ```sh
-     sudo timeshift --create --comments "Manual backup"
-     ```
-   - Restore a snapshot:
-     ```sh
-     sudo timeshift --restore
-     ```
+      - Create a snapshot:
+      ```sh
+      sudo timeshift --create --comments "Manual backup"
+      ```
+      - Restore a snapshot:
+      ```sh
+      sudo timeshift --restore
+      ```
 
 #### Backup Automation with Cron
 
 1. **Schedule a Backup Job**:
-   - Edit the crontab file:
-     ```sh
-     crontab -e
-     ```
-   - Add a cron job (example: daily backup at 2 AM):
-     ```sh
-     0 2 * * * /usr/bin/rsync -avh /source/directory /destination/directory
-     ```
+      - Edit the crontab file:
+      ```sh
+      crontab -e
+      ```
+      - Add a cron job (example: daily backup at 2 AM):
+      ```sh
+      0 2 * * * /usr/bin/rsync -avh /source/directory /destination/directory
+      ```
 
 #### Best Practices for Backup and Recovery
 

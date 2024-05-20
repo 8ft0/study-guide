@@ -7,21 +7,21 @@
 #### Creating and Managing Users
 
 1. **Create a New User**:
-   ```sh
-   sudo useradd <username>
-   ```
-   - With home directory creation:
-     ```sh
-     sudo useradd -m <username>
-     ```
-   - With a specific shell:
-     ```sh
-     sudo useradd -s /bin/bash <username>
-     ```
-   - With a specific home directory:
-     ```sh
-     sudo useradd -m -d /home/<username> <username>
-     ```
+      ```sh
+      sudo useradd <username>
+      ```
+      - With home directory creation:
+      ```sh
+      sudo useradd -m <username>
+      ```
+      - With a specific shell:
+      ```sh
+      sudo useradd -s /bin/bash <username>
+      ```
+      - With a specific home directory:
+      ```sh
+      sudo useradd -m -d /home/<username> <username>
+      ```
 
 2. **Set User Password**:
    ```sh
@@ -29,31 +29,31 @@
    ```
 
 3. **Modify User Account**:
-   - Change user's shell:
-     ```sh
-     sudo usermod -s /bin/zsh <username>
-     ```
-   - Change user's home directory:
-     ```sh
-     sudo usermod -d /new/home/directory <username>
-     ```
-   - Lock user account:
-     ```sh
-     sudo usermod -L <username>
-     ```
-   - Unlock user account:
-     ```sh
-     sudo usermod -U <username>
-     ```
+      - Change user's shell:
+      ```sh
+      sudo usermod -s /bin/zsh <username>
+      ```
+      - Change user's home directory:
+      ```sh
+      sudo usermod -d /new/home/directory <username>
+      ```
+      - Lock user account:
+      ```sh
+      sudo usermod -L <username>
+      ```
+      - Unlock user account:
+      ```sh
+      sudo usermod -U <username>
+      ```
 
 4. **Delete a User**:
-   ```sh
-   sudo userdel <username>
-   ```
-   - Delete user along with home directory and mail spool:
-     ```sh
-     sudo userdel -r <username>
-     ```
+      ```sh
+      sudo userdel <username>
+      ```
+      - Delete user along with home directory and mail spool:
+      ```sh
+      sudo userdel -r <username>
+      ```
 
 #### Managing Groups
 
@@ -111,28 +111,28 @@
 #### User and Group Configuration Files
 
 1. **/etc/passwd**:
-   - Contains user account information.
-   - Format: `username:x:UID:GID:comment:home_directory:shell`
-   - Example entry:
-     ```sh
-     jan:x:1001:1001:Jan:/home/jan:/bin/bash
-     ```
+      - Contains user account information.
+      - Format: `username:x:UID:GID:comment:home_directory:shell`
+      - Example entry:
+      ```sh
+      jan:x:1001:1001:Jan:/home/jan:/bin/bash
+      ```
 
 2. **/etc/shadow**:
-   - Contains secure user account information.
-   - Format: `username:password:last_change:min:max:warn:inactive:expire:flag`
-   - Example entry:
-     ```sh
-     jan:$6$saltsaltsaltsalt$hashedpassword:18449:0:99999:7:::
-     ```
+      - Contains secure user account information.
+      - Format: `username:password:last_change:min:max:warn:inactive:expire:flag`
+      - Example entry:
+      ```sh
+      jan:$6$saltsaltsaltsalt$hashedpassword:18449:0:99999:7:::
+      ```
 
 3. **/etc/group**:
-   - Contains group account information.
-   - Format: `groupname:x:GID:member1,member2,member3`
-   - Example entry:
-     ```sh
-     sudo:x:27:jan
-     ```
+      - Contains group account information.
+      - Format: `groupname:x:GID:member1,member2,member3`
+      - Example entry:
+      ```sh
+      sudo:x:27:jan
+      ```
 
 #### Common Tasks
 

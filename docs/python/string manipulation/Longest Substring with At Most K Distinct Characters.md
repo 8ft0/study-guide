@@ -20,13 +20,13 @@ Given a string \( S \) and an integer \( K \), find the length of the longest su
 
 ### Example
 
-#### Input
+Input 
 ```
 S: "eceba"
 K: 2
 ```
 
-#### Output
+Output 
 ```
 3
 ```
@@ -42,24 +42,24 @@ def length_of_longest_substring_k_distinct(S: str, K: int) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 S: "aa"
 K: 1
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 2
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 S: "a"
 K: 1
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 1
 ```

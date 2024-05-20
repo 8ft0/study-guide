@@ -18,12 +18,12 @@ Given a string \( S \), find the length of the longest substring without repeati
 
 ### Example
 
-#### Input
+Input 
 ```
 abcabcbb
 ```
 
-#### Output
+Output 
 ```
 3
 ```
@@ -39,22 +39,22 @@ def length_of_longest_substring(S: str) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 bbbbb
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 1
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 pwwkew
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 3
 ```

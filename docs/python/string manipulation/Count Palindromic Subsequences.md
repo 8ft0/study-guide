@@ -18,12 +18,12 @@ Given a string \( S \), count the number of palindromic subsequences in \( S \).
 
 ### Example
 
-#### Input
+Input 
 ```
 abc
 ```
 
-#### Output
+Output 
 ```
 3
 ```
@@ -39,22 +39,22 @@ def count_palindromic_subsequences(S: str) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 aaa
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 6
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 abcb
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 6
 ```

@@ -18,13 +18,13 @@ You are given two strings, \( A \) and \( B \), both consisting of lowercase Eng
 
 ### Example
 
-#### Input
+Input 
 ```
 A: cde
 B: abc
 ```
 
-#### Output
+Output 
 ```
 4
 ```
@@ -44,24 +44,24 @@ def make_anagram(A: str, B: str) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 A: hello
 B: billion
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 6
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 A: abc
 B: cde
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 4
 ```

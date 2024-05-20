@@ -18,12 +18,12 @@ Given a string \( S \) of lowercase English letters, determine the index of the 
 
 ### Example
 
-#### Input
+Input 
 ```
 abca
 ```
 
-#### Output
+Output 
 ```
 1
 ```
@@ -39,22 +39,22 @@ def palindrome_index(S: str) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 racecar
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 -1
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 aaab
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 3
 ```

@@ -10,10 +10,10 @@
    ```sh
    lsblk
    ```
-   - Alternative command:
-     ```sh
-     fdisk -l
-     ```
+      - Alternative command:
+      ```sh
+      fdisk -l
+      ```
 
 2. **View Disk Usage**:
    ```sh
@@ -38,26 +38,26 @@
 #### Partitioning Disks
 
 1. **Using `fdisk`**:
-   - Open `fdisk` for a specific disk:
-     ```sh
-     sudo fdisk /dev/sdX
-     ```
-   - Common `fdisk` commands:
-     - `n`: Add a new partition
-     - `d`: Delete a partition
-     - `p`: Print the partition table
-     - `w`: Write changes and exit
+      - Open `fdisk` for a specific disk:
+      ```sh
+      sudo fdisk /dev/sdX
+      ```
+      - Common `fdisk` commands:
+      - `n`: Add a new partition
+      - `d`: Delete a partition
+      - `p`: Print the partition table
+      - `w`: Write changes and exit
 
 2. **Using `parted`**:
-   - Open `parted` for a specific disk:
-     ```sh
-     sudo parted /dev/sdX
-     ```
-   - Common `parted` commands:
-     - `print`: Display the partition table
-     - `mklabel gpt`: Create a new GPT partition table
-     - `mkpart primary ext4 0% 100%`: Create a primary partition spanning the entire disk
-     - `quit`: Exit `parted`
+      - Open `parted` for a specific disk:
+      ```sh
+      sudo parted /dev/sdX
+      ```
+      - Common `parted` commands:
+      - `print`: Display the partition table
+      - `mklabel gpt`: Create a new GPT partition table
+      - `mkpart primary ext4 0% 100%`: Create a primary partition spanning the entire disk
+      - `quit`: Exit `parted`
 
 #### Creating Filesystems
 
@@ -100,46 +100,46 @@
    ```
 
 4. **Mount a Filesystem at Boot**:
-   - Edit `/etc/fstab`:
-     ```sh
-     sudo nano /etc/fstab
-     ```
-   - Add an entry:
-     ```sh
-     /dev/sdX1 /mnt ext4 defaults 0 2
-     ```
+      - Edit `/etc/fstab`:
+      ```sh
+      sudo nano /etc/fstab
+      ```
+      - Add an entry:
+      ```sh
+      /dev/sdX1 /mnt ext4 defaults 0 2
+      ```
 
 #### Resizing Partitions and Filesystems
 
 1. **Resize an ext4 Filesystem**:
-   - **Increase**:
-     ```sh
-     sudo resize2fs /dev/sdX1
-     ```
-   - **Decrease** (unmount first):
-     ```sh
-     sudo umount /dev/sdX1
-     sudo resize2fs /dev/sdX1 <size>
-     sudo mount /dev/sdX1
-     ```
+      - **Increase**:
+      ```sh
+      sudo resize2fs /dev/sdX1
+      ```
+      - **Decrease** (unmount first):
+      ```sh
+      sudo umount /dev/sdX1
+      sudo resize2fs /dev/sdX1 <size>
+      sudo mount /dev/sdX1
+      ```
 
 2. **Resize an XFS Filesystem**:
-   - **Increase**:
-     ```sh
-     sudo xfs_growfs /mnt
-     ```
-   - **Decrease**: XFS does not support shrinking.
+      - **Increase**:
+      ```sh
+      sudo xfs_growfs /mnt
+      ```
+      - **Decrease**: XFS does not support shrinking.
 
 3. **Resize a Partition** (using `parted`):
-   - Open `parted`:
-     ```sh
-     sudo parted /dev/sdX
-     ```
-   - Resize partition:
-     ```sh
-     resizepart PARTITION_NUMBER END
-     ```
-   - Adjust the filesystem size as necessary.
+      - Open `parted`:
+      ```sh
+      sudo parted /dev/sdX
+      ```
+      - Resize partition:
+      ```sh
+      resizepart PARTITION_NUMBER END
+      ```
+      - Adjust the filesystem size as necessary.
 
 #### Managing LVM (Logical Volume Manager)
 
@@ -165,13 +165,13 @@
    ```
 
 5. **Reduce Logical Volume**:
-   - Unmount the filesystem first:
-     ```sh
-     sudo umount /dev/my_vg/my_lv
-     sudo resize2fs /dev/my_vg/my_lv <new_size>
-     sudo lvreduce -L <new_size> /dev/my_vg/my_lv
-     sudo mount /dev/my_vg/my_lv
-     ```
+      - Unmount the filesystem first:
+      ```sh
+      sudo umount /dev/my_vg/my_lv
+      sudo resize2fs /dev/my_vg/my_lv <new_size>
+      sudo lvreduce -L <new_size> /dev/my_vg/my_lv
+      sudo mount /dev/my_vg/my_lv
+      ```
 
 6. **Remove Logical Volume**:
    ```sh

@@ -18,12 +18,12 @@ Given a string \( S \), you need to reverse only the vowels in the string and re
 
 ### Example
 
-#### Input
+Input 
 ```
 hello world
 ```
 
-#### Output
+Output 
 ```
 holle werld
 ```
@@ -41,22 +41,22 @@ def reverse_vowels(S: str) -> str:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 Coding
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 HeckarRonk
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 Programming is fun!
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 Prigrammong os fun!
 ```

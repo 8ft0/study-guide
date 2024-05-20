@@ -19,13 +19,13 @@ Given two strings \( S \) and \( T \), find the minimum window in \( S \) which 
 
 ### Example
 
-#### Input
+Input 
 ```
 S: ADOBECODEBANC
 T: ABC
 ```
 
-#### Output
+Output 
 ```
 BANC
 ```
@@ -41,24 +41,24 @@ def min_window(S: str, T: str) -> str:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 S: A
 T: AA
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 ""
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 S: A
 T: A
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 A
 ```

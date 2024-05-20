@@ -18,12 +18,12 @@ You are given a string containing characters 'A' and 'B' only. Your task is to c
 
 ### Example
 
-#### Input
+Input 
 ```
 AABAAB
 ```
 
-#### Output
+Output 
 ```
 2
 ```
@@ -41,32 +41,32 @@ def alternating_characters(S: str) -> int:
     # Your code here
 ```
 
-### Sample Input 1
+Sample Input 1
 ```
 AAAA
 ```
 
-### Sample Output 1
+Sample Output 1
 ```
 3
 ```
 
-### Sample Input 2
+Sample Input 2
 ```
 BBBBB
 ```
 
-### Sample Output 2
+Sample Output 2
 ```
 4
 ```
 
-### Sample Input 3
+Sample Input 3
 ```
 ABABABAB
 ```
 
-### Sample Output 3
+Sample Output 3
 ```
 0
 ```
