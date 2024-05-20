@@ -5,18 +5,18 @@ As a Site Reliability Engineer (SRE) at Acme, your task is to ensure the smooth 
 
 ### Requirements:
 1. **Service Metrics**: Collect and monitor key metrics for each microservice, such as:
-   - CPU usage
-   - Memory usage
-   - Response time
-   - Error rate
+    - CPU usage
+    - Memory usage
+    - Response time
+    - Error rate
 
 2. **Log Analysis**: Continuously analyze log files to detect patterns indicating potential issues, such as high error rates or slow response times.
 
 3. **Alerts**: Set up alerts to notify the SRE team when certain thresholds are breached, for example:
-   - CPU usage exceeds 80% for more than 5 minutes.
-   - Memory usage exceeds 75% for more than 5 minutes.
-   - Average response time exceeds 200ms for more than 3 minutes.
-   - Error rate exceeds 1% for more than 2 minutes.
+    - CPU usage exceeds 80% for more than 5 minutes.
+    - Memory usage exceeds 75% for more than 5 minutes.
+    - Average response time exceeds 200ms for more than 3 minutes.
+    - Error rate exceeds 1% for more than 2 minutes.
 
 4. **Incident Response**: Implement automated responses for common incidents to reduce downtime and maintain service reliability.
 

@@ -5,17 +5,17 @@ You are required to write a shell script that monitors the system's CPU and memo
 
 ### Requirements:
 1. **Monitor system resources**:
-   - Monitor CPU and memory usage at regular intervals (e.g., every 10 seconds).
-   - If CPU usage exceeds 80% or memory usage exceeds 70%, log an alert and send an email.
+    - Monitor CPU and memory usage at regular intervals (e.g., every 10 seconds).
+    - If CPU usage exceeds 80% or memory usage exceeds 70%, log an alert and send an email.
 
 2. **Log alerts**:
-   - Log alert messages to a file named `system_alerts.log` in the following format:
-     ```
-     YYYY-MM-DD HH:MM:SS - ALERT: <resource> usage is <usage>%
-     ```
+    - Log alert messages to a file named `system_alerts.log` in the following format:
+      ```
+      YYYY-MM-DD HH:MM:SS - ALERT: <resource> usage is <usage>%
+      ```
 
 3. **Send email notifications**:
-   - Send an email with the alert message to a specified email address.
+    - Send an email with the alert message to a specified email address.
 
 ### Input:
 - Thresholds for CPU (80%) and memory (70%) usage.
@@ -103,8 +103,8 @@ done
 3. **Send email alerts**: Define a function `send_email` that sends an email with the alert message.
 
 4. **Monitor system resources**: Use a `while true` loop to continuously monitor CPU and memory usage at 10-second intervals.
-   - **CPU usage**: Calculate CPU usage using `top` and check if it exceeds the threshold. If so, log the alert and send an email.
-   - **Memory usage**: Calculate memory usage using `free` and check if it exceeds the threshold. If so, log the alert and send an email.
+    - **CPU usage**: Calculate CPU usage using `top` and check if it exceeds the threshold. If so, log the alert and send an email.
+    - **Memory usage**: Calculate memory usage using `free` and check if it exceeds the threshold. If so, log the alert and send an email.
 
 5. **Wait for the next check**: Use `sleep 10` to wait 10 seconds before the next check.
 

@@ -1,4 +1,4 @@
-## Log File and Tarball Manipulation
+# Log File and Tarball Manipulation
 
 ### Description:
 You are provided with a tarball (`logs.tar.gz`) containing multiple log files. Your task is to write a shell script that extracts the tarball, processes the log files, and generates a summary report.
@@ -6,17 +6,17 @@ You are provided with a tarball (`logs.tar.gz`) containing multiple log files. Y
 ### Requirements:
 1. **Extract the tarball**: Extract `logs.tar.gz` to a directory named `logs`.
 2. **Process log files**: Each log file contains multiple lines with entries in the following format:
-   ```
-   YYYY-MM-DD HH:MM:SS [LEVEL] Message
-   ```
-   - `YYYY-MM-DD` is the date.
-   - `HH:MM:SS` is the time.
-   - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
-   - `Message` is the log message.
+    ```
+    YYYY-MM-DD HH:MM:SS [LEVEL] Message
+    ```
+    - `YYYY-MM-DD` is the date.
+    - `HH:MM:SS` is the time.
+    - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
+    - `Message` is the log message.
 
 3. **Generate summary report**:
-   - Count the number of log entries for each log level (INFO, WARNING, ERROR) across all log files.
-   - Identify the most recent log entry (based on date and time) for each log level.
+    - Count the number of log entries for each log level (INFO, WARNING, ERROR) across all log files.
+    - Identify the most recent log entry (based on date and time) for each log level.
 
 ### Input:
 - A tarball file named `logs.tar.gz` containing multiple log files.

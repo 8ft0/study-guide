@@ -5,13 +5,13 @@ You are given a directory containing various types of files (text files, images,
 
 ### Requirements:
 1. **Organise files by type**:
-   - Move files into subdirectories based on their file extensions.
-   - Create a subdirectory for each file type (e.g., `txt`, `jpg`, `sh`).
-   - If a subdirectory for a file type already exists, just move the file into it.
+    - Move files into subdirectories based on their file extensions.
+    - Create a subdirectory for each file type (e.g., `txt`, `jpg`, `sh`).
+    - If a subdirectory for a file type already exists, just move the file into it.
 
 2. **Generate summary report**:
-   - Count the number of files for each file type.
-   - Output the summary report to a file named `file_summary.txt`.
+    - Count the number of files for each file type.
+    - Output the summary report to a file named `file_summary.txt`.
 
 ### Input:
 - A directory named `files` containing various types of files.

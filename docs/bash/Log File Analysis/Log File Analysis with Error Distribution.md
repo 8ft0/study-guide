@@ -1,21 +1,21 @@
-## Log File Analysis with Error Distribution
+# Log File Analysis with Error Distribution
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that analyses these log files to calculate the distribution of log entries per hour, specifically focusing on `ERROR` log entries. The script should generate a summary report showing the number of `ERROR` entries for each hour of the day.
 
 ### Requirements:
 1. **Process log files**: Each log file contains multiple lines with entries in the following format:
-   ```
-   YYYY-MM-DD HH:MM:SS [LEVEL] Message
-   ```
-   - `YYYY-MM-DD` is the date.
-   - `HH:MM:SS` is the time.
-   - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
-   - `Message` is the log message.
+    ```
+    YYYY-MM-DD HH:MM:SS [LEVEL] Message
+    ```
+    - `YYYY-MM-DD` is the date.
+    - `HH:MM:SS` is the time.
+    - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
+    - `Message` is the log message.
 
 2. **Generate error distribution report**:
-   - Count the number of `ERROR` log entries for each hour of the day (00 to 23).
-   - Output the distribution in a report format.
+    - Count the number of `ERROR` log entries for each hour of the day (00 to 23).
+    - Output the distribution in a report format.
 
 ### Input:
 - A directory named `log_files` containing multiple log files.

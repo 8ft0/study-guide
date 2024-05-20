@@ -1,4 +1,4 @@
-## Parse Logs and Count Events by Severity Level
+# Parse Logs and Count Events by Severity Level
 
 #### Problem Statement
 

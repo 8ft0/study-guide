@@ -4,26 +4,30 @@
 You are required to write a shell script that monitors CPU and memory usage on a system, and sends alerts when usage exceeds specified thresholds. The script should run continuously and log its activities.
 
 ### Requirements:
+
 1. **Monitor CPU and Memory Usage**:
-   - The script should check the CPU and memory usage at regular intervals (e.g., every 5 seconds).
-   - If the CPU or memory usage exceeds specified thresholds, the script should log a warning message.
+
+    - The script should check the CPU and memory usage at regular intervals (e.g., every 5 seconds).
+    - If the CPU or memory usage exceeds specified thresholds, the script should log a warning message.
 
 2. **Logging**:
-   - The script should log its activities to a file named `system_usage.log` in the following format:
-     ```yaml
-     YYYY-MM-DD HH:MM:SS - [LEVEL] Message
-     ```
-     - `YYYY-MM-DD` is the date.
-     - `HH:MM:SS` is the time.
-     - `[LEVEL]` is the log level (`INFO`, `WARNING`).
-     - `Message` is the log message.
+
+    - The script should log its activities to a file named `system_usage.log` in the following format:
+      ```yaml
+      YYYY-MM-DD HH:MM:SS - [LEVEL] Message
+      ```
+      - `YYYY-MM-DD` is the date.
+      - `HH:MM:SS` is the time.
+      - `[LEVEL]` is the log level (`INFO`, `WARNING`).
+      - `Message` is the log message.
 
 3. **Command-line Arguments**:
-   - The script should accept command-line arguments to specify the CPU and memory usage thresholds (in percentage).
-   - If the thresholds are not provided, they should default to 75% for CPU and 80% for memory.
+
+    - The script should accept command-line arguments to specify the CPU and memory usage thresholds (in percentage).
+    - If the thresholds are not provided, they should default to 75% for CPU and 80% for memory.
 
 4. **Continuous Monitoring**:
-   - The script should run continuously, checking the CPU and memory usage at regular intervals.
+    - The script should run continuously, checking the CPU and memory usage at regular intervals.
 
 ### Input:
 - Command-line arguments specifying the CPU and memory usage thresholds (in percentage).

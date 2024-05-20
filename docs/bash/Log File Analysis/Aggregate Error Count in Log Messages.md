@@ -1,4 +1,4 @@
-## Aggregate Error Count in Log Messages 
+# Aggregate Error Count in Log Messages 
 
 #### Problem Statement
 

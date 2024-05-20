@@ -1,24 +1,24 @@
-## Log File Filtering and Compression
+# Log File Filtering and Compression
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that filters the log entries based on a specified log level, outputs these filtered entries to a new file, and then compresses this file into a zip archive.
 
 ### Requirements:
 1. **Filter log entries**: Each log file contains multiple lines with entries in the following format:
-   ```
-   YYYY-MM-DD HH:MM:SS [LEVEL] Message
-   ```
-   - `YYYY-MM-DD` is the date.
-   - `HH:MM:SS` is the time.
-   - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
-   - `Message` is the log message.
+    ```
+    YYYY-MM-DD HH:MM:SS [LEVEL] Message
+    ```
+    - `YYYY-MM-DD` is the date.
+    - `HH:MM:SS` is the time.
+    - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
+    - `Message` is the log message.
 
 2. **Generate filtered log file**:
-   - Filter log entries based on a specified log level (e.g., `ERROR`).
-   - Output these filtered entries to a new file named `filtered_logs.txt`.
+    - Filter log entries based on a specified log level (e.g., `ERROR`).
+    - Output these filtered entries to a new file named `filtered_logs.txt`.
 
 3. **Compress filtered log file**:
-   - Compress `filtered_logs.txt` into a zip archive named `filtered_logs.zip`.
+    - Compress `filtered_logs.txt` into a zip archive named `filtered_logs.zip`.
 
 ### Input:
 - A directory named `log_files` containing multiple log files.

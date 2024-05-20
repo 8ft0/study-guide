@@ -1,21 +1,21 @@
-## Log File Analysis and Archive
+# Log File Analysis and Archive
 
 ### Description:
 You are given a directory containing multiple log files. Your task is to write a shell script that processes these log files to extract specific information, generates a summary report, and then archives the log files into a tarball.
 
 ### Requirements:
 1. **Process log files**: Each log file contains multiple lines with entries in the following format:
-   ```
-   YYYY-MM-DD HH:MM:SS [LEVEL] Message
-   ```
-   - `YYYY-MM-DD` is the date.
-   - `HH:MM:SS` is the time.
-   - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
-   - `Message` is the log message.
+    ```
+    YYYY-MM-DD HH:MM:SS [LEVEL] Message
+    ```
+    - `YYYY-MM-DD` is the date.
+    - `HH:MM:SS` is the time.
+    - `[LEVEL]` is the log level (`INFO`, `WARNING`, `ERROR`).
+    - `Message` is the log message.
 
 2. **Generate summary report**:
-   - Count the number of log entries for each log level (INFO, WARNING, ERROR) across all log files.
-   - Identify the date with the highest number of log entries.
+    - Count the number of log entries for each log level (INFO, WARNING, ERROR) across all log files.
+    - Identify the date with the highest number of log entries.
 
 3. **Archive log files**: After processing, archive all log files into a tarball named `processed_logs.tar.gz`.
 

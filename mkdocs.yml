@@ -1,16 +1,26 @@
 site_name: CheatSheets
 theme:
   name: material
-  # features:
-  #   - navigation.tabs
-  #   - navigation.sections
-  #   - toc.integrate
-  #   # - navigation.top
-  #   - search.suggest
-  #   - search.highlight
-  #   - content.tabs.link
-  #   - content.code.annotation
-  #   - content.code.copy
+  features:
+    - admonition
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - navigation.expand
+    - navigation.instant
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - pymdownx.details
+    - pymdownx.superfences
+    - search.highlight
+    - search.suggest
+
+    # - navigation.sections
+    # - toc.integrate
+    # - navigation.top
+
   language: en
   palette:
     - scheme: default
@@ -54,4 +64,4 @@ markdown_extensions:
   - pymdownx.emoji
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/8ft0"  target="_blank" rel="noopener">8ft0</a>
+  &copy; 2024 <a href="https://github.com/8ft0"  target="_blank" rel="noopener">8ft0.com</a>

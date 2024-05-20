@@ -5,25 +5,25 @@ You are tasked with creating a shell script that monitors disk space usage on a 
 
 ### Requirements:
 1. **Monitor Disk Space Usage**:
-   - The script should check the disk space usage of all mounted filesystems.
-   - If any filesystem's usage exceeds a specified threshold (e.g., 80%), the script should log a warning message.
+    - The script should check the disk space usage of all mounted filesystems.
+    - If any filesystem's usage exceeds a specified threshold (e.g., 80%), the script should log a warning message.
 
 2. **Logging**:
-   - The script should log its activities to a file named `disk_usage.log` in the following format:
-     ```yaml
-     YYYY-MM-DD HH:MM:SS - [LEVEL] Message
-     ```
-     - `YYYY-MM-DD` is the date.
-     - `HH:MM:SS` is the time.
-     - `[LEVEL]` is the log level (`INFO`, `WARNING`).
-     - `Message` is the log message.
+    - The script should log its activities to a file named `disk_usage.log` in the following format:
+      ```yaml
+      YYYY-MM-DD HH:MM:SS - [LEVEL] Message
+      ```
+      - `YYYY-MM-DD` is the date.
+      - `HH:MM:SS` is the time.
+      - `[LEVEL]` is the log level (`INFO`, `WARNING`).
+      - `Message` is the log message.
 
 3. **Command-line Arguments**:
-   - The script should accept a command-line argument to specify the usage threshold (in percentage).
-   - If the threshold is not provided, it should default to 80%.
+    - The script should accept a command-line argument to specify the usage threshold (in percentage).
+    - If the threshold is not provided, it should default to 80%.
 
 4. **Periodic Execution**:
-   - The script should be designed to be run periodically (e.g., via `cron`).
+    - The script should be designed to be run periodically (e.g., via `cron`).
 
 ### Input:
 - A command-line argument specifying the usage threshold (in percentage).

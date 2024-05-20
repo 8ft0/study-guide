@@ -18,11 +18,11 @@ As a Site Reliability Engineer (SRE) at Acme, you need to ensure the platform's 
    The script should collect data every minute for a specified duration (e.g., 10 minutes).
 
 2. **Process data**:
-   - Calculate the average number of active users per minute.
-   - Identify the minute with the highest number of new videos uploaded.
+    - Calculate the average number of active users per minute.
+    - Identify the minute with the highest number of new videos uploaded.
 
 3. **Set up alerting mechanism**:
-   - Set a threshold for active users (e.g., 10000). If the number of active users exceeds this threshold at any minute, print an alert message.
+    - Set a threshold for active users (e.g., 10000). If the number of active users exceeds this threshold at any minute, print an alert message.
 
 ### Input:
 - Simulated API endpoint (e.g., `http://example.com/api/user_metrics`).

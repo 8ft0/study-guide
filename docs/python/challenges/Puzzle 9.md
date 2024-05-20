@@ -1,4 +1,4 @@
-# Puzzle 9 (Algorithm)
+# Puzzle 3x3
 
 #### Problem Statement
 
