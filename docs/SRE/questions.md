@@ -35,36 +35,37 @@ Each layer is only stored once and is reused across images, which saves space on
 ### 5. Structure of the URL 
 
 - **URL Structure**: A URL typically consists of the following:
-  - Protocol (e.g., HTTP, HTTPS)
-  - Hostname or IP Address
-  - Port (optional)
-  - Path to a specific resource
-  - Query string (optional)
-  - Fragment (optional)
+    - Protocol (e.g., HTTP, HTTPS)
+    - Hostname or IP Address
+    - Port (optional)
+    - Path to a specific resource
+    - Query string (optional)
+    - Fragment (optional)
 
 ### 6. OSI Model
 
 - **OSI Model**: The Open Systems Interconnection (OSI) model is a conceptual framework used to understand network interactions in seven layers:
-  1. Physical
-  2. Data Link
-  3. Network
-  4. Transport
-  5. Session
-  6. Presentation
-  7. Application
+
+    1. Physical
+    2. Data Link
+    3. Network
+    4. Transport
+    5. Session
+    6. Presentation
+    7. Application
 
 ### 7. TCP Three-Way Handshake and Four-Way Termination
 
 - **Three-Way Handshake**:
-  1. Client sends SYN (synchronize) to server.
-  2. Server responds with SYN-ACK (synchronize-acknowledge).
-  3. Client sends ACK (acknowledge).
+    1. Client sends SYN (synchronize) to server.
+    2. Server responds with SYN-ACK (synchronize-acknowledge).
+    3. Client sends ACK (acknowledge).
 
 - **Four-Way Termination**:
-  1. Client sends a FIN (finish) signal.
-  2. Server acknowledges with ACK.
-  3. Server sends a FIN.
-  4. Client sends ACK to acknowledge.
+    1. Client sends a FIN (finish) signal.
+    2. Server acknowledges with ACK.
+    3. Server sends a FIN.
+    4. Client sends ACK to acknowledge.
 
 ### 8. What are Latency and Throughput?
 
