@@ -60,36 +60,34 @@ D. By enabling graphical user interfaces for all users
 
 ### Answers:
 
-1. **Q1: What is a key characteristic of a stateless Linux system?**
+**Q1: What is a key characteristic of a stateless Linux system?**
 
-   **Answer: B. It does not retain state information across reboots.**
+- **Answer: B. It does not retain state information across reboots.**
 
-   Explanation: A stateless Linux system does not retain state information across reboots. This means that any changes made during a session are lost when the system is restarted.
+- Explanation: A stateless Linux system does not retain state information across reboots. This means that any changes made during a session are lost when the system is restarted.
 
-2. **Q2: Which technology is often used to provide a stateless environment for Linux systems?**
+**Q2: Which technology is often used to provide a stateless environment for Linux systems?**
 
-   **Answer: D. Network File System (NFS)**
+- **Answer: D. Network File System (NFS)**
 
-   Explanation: NFS is often used to provide a stateless environment by storing user data and system configurations on a remote server, ensuring that data is not stored locally on the user's machine.
+- Explanation: NFS is often used to provide a stateless environment by storing user data and system configurations on a remote server, ensuring that data is not stored locally on the user's machine.
 
-3. **Q3: In a stateless Linux system, where is user data typically stored?**
+**Q3: In a stateless Linux system, where is user data typically stored?**
 
-   **Answer: B. On a remote server**
+- **Answer: B. On a remote server**
 
-   Explanation: In a stateless Linux system, user data is typically stored on a remote server to ensure that no data is retained locally on the user's machine.
+- Explanation: In a stateless Linux system, user data is typically stored on a remote server to ensure that no data is retained locally on the user's machine.
 
-4. **Q4: Which of the following best describes the purpose of using a stateless Linux system in a corporate environment?**
+**Q4: Which of the following best describes the purpose of using a stateless Linux system in a corporate environment?**
 
-   **Answer: B. To simplify system maintenance and updates by using a centralised management system**
+- **Answer: B. To simplify system maintenance and updates by using a centralised management system**
 
-   Explanation: Stateless Linux systems simplify system maintenance and updates by using centralised management, ensuring that all systems can be updated and maintained uniformly without local state information.
+- Explanation: Stateless Linux systems simplify system maintenance and updates by using centralised management, ensuring that all systems can be updated and maintained uniformly without local state information.
 
-5. **Q5: How can stateless Linux systems benefit from using configuration management tools like Ansible or Puppet?**
+**Q5: How can stateless Linux systems benefit from using configuration management tools like Ansible or Puppet?**
 
-   **Answer: A. By ensuring consistent configuration across all systems**
+- **Answer: A. By ensuring consistent configuration across all systems**
 
-   Explanation: Configuration management tools like Ansible or Puppet help ensure consistent configuration across all systems, which is particularly important for maintaining the uniformity of stateless Linux systems.
+- Explanation: Configuration management tools like Ansible or Puppet help ensure consistent configuration across all systems, which is particularly important for maintaining the uniformity of stateless Linux systems.
 
 ---
-
-If you need further questions or additional details, feel free to ask!

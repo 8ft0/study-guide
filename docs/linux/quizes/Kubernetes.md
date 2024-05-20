@@ -56,35 +56,35 @@ D. `kubectl delete service my-service`
 
 ### Answers:
 
-1. **Q1: Which command is used to display the current context and cluster information?**
+**Q1: Which command is used to display the current context and cluster information?**
 
-   **Answer: C. `kubectl cluster-info`**
+- **Answer: C. `kubectl cluster-info`**
 
-   Explanation: The `kubectl cluster-info` command displays information about the current Kubernetes cluster.
+- Explanation: The `kubectl cluster-info` command displays information about the current Kubernetes cluster.
 
-2. **Q2: How would you create a deployment in Kubernetes using a configuration file named `deployment.yaml`?**
+**Q2: How would you create a deployment in Kubernetes using a configuration file named `deployment.yaml`?**
 
-   **Answer: A. `kubectl apply -f deployment.yaml`**
+- **Answer: A. `kubectl apply -f deployment.yaml`**
 
-   Explanation: The `kubectl apply -f deployment.yaml` command creates or updates resources defined in the `deployment.yaml` file.
+- Explanation: The `kubectl apply -f deployment.yaml` command creates or updates resources defined in the `deployment.yaml` file.
 
-3. **Q3: Which command would you use to list all the pods in the `default` namespace?**
+**Q3: Which command would you use to list all the pods in the `default` namespace?**
 
-   **Answer: D. Both A and B**
+- **Answer: D. Both A and B**
 
-   Explanation: Both `kubectl get pods --namespace default` and `kubectl get pods -n default` can be used to list all the pods in the `default` namespace.
+- Explanation: Both `kubectl get pods --namespace default` and `kubectl get pods -n default` can be used to list all the pods in the `default` namespace.
 
-4. **Q4: How can you scale a deployment named `nginx-deployment` to 5 replicas?**
+**Q4: How can you scale a deployment named `nginx-deployment` to 5 replicas?**
 
-   **Answer: D. Both A and B**
+- **Answer: D. Both A and B**
 
-   Explanation: Both `kubectl scale deployment nginx-deployment --replicas=5` and `kubectl scale --replicas=5 deployment/nginx-deployment` can be used to scale the deployment to 5 replicas.
+- Explanation: Both `kubectl scale deployment nginx-deployment --replicas=5` and `kubectl scale --replicas=5 deployment/nginx-deployment` can be used to scale the deployment to 5 replicas.
 
-5. **Q5: Which command is used to delete a service named `my-service` in Kubernetes?**
+**Q5: Which command is used to delete a service named `my-service` in Kubernetes?**
 
-   **Answer: D. `kubectl delete service my-service`**
+- **Answer: D. `kubectl delete service my-service`**
 
-   Explanation: The `kubectl delete service my-service` command deletes the specified service from the Kubernetes cluster.
+- Explanation: The `kubectl delete service my-service` command deletes the specified service from the Kubernetes cluster.
 
 ---
 

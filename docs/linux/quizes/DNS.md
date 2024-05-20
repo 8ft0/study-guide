@@ -60,36 +60,35 @@ D. `nmcli con set <connection_name> dns <dns_server>`
 
 ### Answers:
 
-1. **Q1: Which file is primarily used to configure the system's DNS resolver?**
+**Q1: Which file is primarily used to configure the system's DNS resolver?**
 
-   **Answer: C. `/etc/resolv.conf`**
+- **Answer: C. `/etc/resolv.conf`**
 
-   Explanation: The file `/etc/resolv.conf` is used to configure the system's DNS resolver by specifying the DNS servers and search domain.
+- Explanation: The file `/etc/resolv.conf` is used to configure the system's DNS resolver by specifying the DNS servers and search domain.
 
-2. **Q2: In the `/etc/resolv.conf` file, which directive is used to specify the DNS server?**
+**Q2: In the `/etc/resolv.conf` file, which directive is used to specify the DNS server?**
 
-   **Answer: B. `nameserver`**
+- **Answer: B. `nameserver`**
 
-   Explanation: The `nameserver` directive in the `/etc/resolv.conf` file is used to specify the IP address of a DNS server.
+- Explanation: The `nameserver` directive in the `/etc/resolv.conf` file is used to specify the IP address of a DNS server.
 
-3. **Q3: Which command would you use to test DNS resolution for the domain `example.com`?**
+**Q3: Which command would you use to test DNS resolution for the domain `example.com`?**
 
-   **Answer: B. `dig example.com`**
+- **Answer: B. `dig example.com`**
 
-   Explanation: The `dig` command is used to perform DNS lookups and can be used to test DNS resolution.
+- Explanation: The `dig` command is used to perform DNS lookups and can be used to test DNS resolution.
 
-4. **Q4: In the context of DNS, what does the term "forwarder" refer to?**
+**Q4: In the context of DNS, what does the term "forwarder" refer to?**
 
-   **Answer: A. A DNS server that forwards queries to other DNS servers if it cannot resolve them itself.**
+- **Answer: A. A DNS server that forwards queries to other DNS servers if it cannot resolve them itself.**
 
-   Explanation: A forwarder is a DNS server that forwards queries to other DNS servers if it cannot resolve them locally.
+- Explanation: A forwarder is a DNS server that forwards queries to other DNS servers if it cannot resolve them locally.
 
-5. **Q5: To change the DNS server on a system using NetworkManager, which command would you use?**
+**Q5: To change the DNS server on a system using NetworkManager, which command would you use?**
 
-   **Answer: C. `nmcli con mod <connection_name> ipv4.dns <dns_server>`**
+- **Answer: C. `nmcli con mod <connection_name> ipv4.dns <dns_server>`**
 
-   Explanation: The command `nmcli con mod <connection_name> ipv4.dns <dns_server>` is used to modify the DNS server settings for a specific network connection managed by NetworkManager.
+- Explanation: The command `nmcli con mod <connection_name> ipv4.dns <dns_server>` is used to modify the DNS server settings for a specific network connection managed by NetworkManager.
 
 ---
 
-If you need more questions or further details, feel free to ask!

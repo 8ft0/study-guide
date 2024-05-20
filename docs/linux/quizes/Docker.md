@@ -60,36 +60,35 @@ D. `containers.conf`
 
 ### Answers:
 
-1. **Q1: Which command is used to list all running Docker containers?**
+**Q1: Which command is used to list all running Docker containers?**
 
-   **Answer: A. `docker ps`**
+- **Answer: A. `docker ps`**
 
-   Explanation: The `docker ps` command lists all running Docker containers.
+- Explanation: The `docker ps` command lists all running Docker containers.
 
-2. **Q2: How would you start a Docker container named `webserver`?**
+**Q2: How would you start a Docker container named `webserver`?**
 
-   **Answer: B. `docker start webserver`**
+- **Answer: B. `docker start webserver`**
 
-   Explanation: The `docker start` command is used to start an existing container named `webserver`.
+- Explanation: The `docker start` command is used to start an existing container named `webserver`.
 
-3. **Q3: Which command is used to build a Docker image from a Dockerfile located in the current directory?**
+**Q3: Which command is used to build a Docker image from a Dockerfile located in the current directory?**
 
-   **Answer: A. `docker build .`
+- **Answer: A. `docker build .`
 
-   Explanation: The `docker build .` command builds a Docker image from the Dockerfile in the current directory.
+- Explanation: The `docker build .` command builds a Docker image from the Dockerfile in the current directory.
 
-4. **Q4: What is the purpose of the `-p` flag in the `docker run` command?**
+**Q4: What is the purpose of the `-p` flag in the `docker run` command?**
 
-   **Answer: B. To specify a port mapping between the host and the container**
+- **Answer: B. To specify a port mapping between the host and the container**
 
-   Explanation: The `-p` flag in the `docker run` command specifies a port mapping between the host and the container, allowing access to the container's services from the host.
+- Explanation: The `-p` flag in the `docker run` command specifies a port mapping between the host and the container, allowing access to the container's services from the host.
 
-5. **Q5: Which file is commonly used to define multi-container Docker applications?**
+**Q5: Which file is commonly used to define multi-container Docker applications?**
 
-   **Answer: B. `docker-compose.yaml`**
+- **Answer: B. `docker-compose.yaml`**
 
-   Explanation: The `docker-compose.yaml` file is used to define and run multi-container Docker applications using Docker Compose.
+- Explanation: The `docker-compose.yaml` file is used to define and run multi-container Docker applications using Docker Compose.
 
 ---
 
-If you need more questions or further details, feel free to ask!

@@ -74,39 +74,37 @@ D. Sets read, write, and execute permissions for the owner and group.
 
 ---
 
-Sure, here are the answers to the multiple-choice questions:
-
 ### Answers:
 
-1. **Q1: What are the permissions of the file `example.txt`?**
+**Q1: What are the permissions of the file `example.txt`?**
 
-   **Answer: A. Read and write for the owner, read for the group and others.**
+- **Answer: A. Read and write for the owner, read for the group and others.**
 
-   Explanation: The permissions `-rw-r--r--` indicate that the owner has read and write permissions, while the group and others have read permissions only.
+- Explanation: The permissions `-rw-r--r--` indicate that the owner has read and write permissions, while the group and others have read permissions only.
 
-2. **Q2: What command would you use to change the permissions of `example.txt` to `-rwxr-xr--`?**
+**Q2: What command would you use to change the permissions of `example.txt` to `-rwxr-xr--`?**
 
-   **Answer: D. `chmod 754 example.txt`**
+- **Answer: D. `chmod 754 example.txt`**
 
-   Explanation: The permissions `-rwxr-xr--` correspond to the numerical value `754`. The owner has read, write, and execute permissions (`7`), the group has read and execute permissions (`5`), and others have read permissions (`4`).
+- Explanation: The permissions `-rwxr-xr--` correspond to the numerical value `754`. The owner has read, write, and execute permissions (`7`), the group has read and execute permissions (`5`), and others have read permissions (`4`).
 
-3. **Q3: What does the `1` in the output `-rw-r--r-- 1 user group 1024 May 16 12:34 example.txt` represent?**
+**Q3: What does the `1` in the output `-rw-r--r-- 1 user group 1024 May 16 12:34 example.txt` represent?**
 
-   **Answer: A. The number of hard links to the file.**
+- **Answer: A. The number of hard links to the file.**
 
-   Explanation: The `1` in the output indicates the number of hard links to the file.
+- Explanation: The `1` in the output indicates the number of hard links to the file.
 
-4. **Q4: If you want to give the group write permissions to the file `example.txt`, which command would you use?**
+**Q4: If you want to give the group write permissions to the file `example.txt`, which command would you use?**
 
-   **Answer: A. `chmod g+w example.txt`**
+- **Answer: A. `chmod g+w example.txt`**
 
-   Explanation: The command `chmod g+w example.txt` adds write permissions for the group.
+- Explanation: The command `chmod g+w example.txt` adds write permissions for the group.
 
-5. **Q5: What is the effect of the following command: `chmod 600 example.txt`?**
+**Q5: What is the effect of the following command: `chmod 600 example.txt`?**
 
-   **Answer: A. Sets read and write permissions for the owner only.**
+- **Answer: A. Sets read and write permissions for the owner only.**
 
-   Explanation: The permissions `600` mean that the owner has read and write permissions (`6`), while the group and others have no permissions (`0` each).
+- Explanation: The permissions `600` mean that the owner has read and write permissions (`6`), while the group and others have no permissions (`0` each).
 
 ---
 
