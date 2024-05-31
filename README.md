@@ -1,2 +1,2 @@
-# cheatsheets
-selection of cheat sheets for onboarding
+# Study Guide
+selection of guides for interview prep, onboarding, etc
