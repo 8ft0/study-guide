@@ -1,4 +1,4 @@
-# Scenario 9: Implement a Zero-Downtime Deployment Strategy
+# Implement a Zero-Downtime Deployment Strategy
 
 **Task:** Design a zero-downtime deployment strategy for a web application hosted on a cloud platform.
 

@@ -1,4 +1,4 @@
-# Scenario 8: Design a Logging and Monitoring System
+# Design a Logging and Monitoring System
 
 **Task:** Design a comprehensive logging and monitoring system for a distributed application.
 

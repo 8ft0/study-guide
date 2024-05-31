@@ -1,4 +1,4 @@
-# Scenario 11: Implement Security Best Practices in a DevOps Pipeline
+# Implement Security Best Practices in a DevOps Pipeline
 
 **Task:** Design a DevOps pipeline with integrated security best practices.
 

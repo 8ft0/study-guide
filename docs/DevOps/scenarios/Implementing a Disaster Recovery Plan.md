@@ -1,4 +1,4 @@
-# Scenario 3: Implementing a Disaster Recovery Plan
+# Implementing a Disaster Recovery Plan
 
 **Task:** Design a disaster recovery plan for a web application hosted on Google Cloud Platform (GCP).
 

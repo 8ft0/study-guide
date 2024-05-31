@@ -1,4 +1,4 @@
-# Scenario 10: Design a Multi-Region Deployment
+# Design a Multi-Region Deployment
 
 **Task:** Design a multi-region deployment for a web application to ensure high availability and disaster recovery.
 

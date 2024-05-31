@@ -1,4 +1,4 @@
-# Scenario 4: Secure a CI/CD Pipeline
+# Secure a CI/CD Pipeline
 
 **Task:** Design a CI/CD pipeline with integrated security checks.
 

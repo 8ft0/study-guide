@@ -1,4 +1,4 @@
-# Scenario 13: Design a Kubernetes-based Microservices Architecture
+# Design a Kubernetes-based Microservices Architecture
 
 **Task:** Design a Kubernetes-based architecture for a microservices application.
 

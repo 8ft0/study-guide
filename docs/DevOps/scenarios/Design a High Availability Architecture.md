@@ -1,4 +1,4 @@
-# Scenario 6: Design a High Availability Architecture
+# Design a High Availability Architecture
 
 **Task:** Design a high availability architecture for a database-backed web application.
 

@@ -1,4 +1,4 @@
-# Scenario 12: Design a Scalable Logging Infrastructure
+# Design a Scalable Logging Infrastructure
 
 **Task:** Design a scalable logging infrastructure for a microservices architecture.
 

@@ -1,4 +1,4 @@
-# Scenario 7: Implement Infrastructure as Code (IaC)
+# Implement Infrastructure as Code (IaC)
 
 **Task:** Design an infrastructure as code setup to manage a multi-cloud environment.
 

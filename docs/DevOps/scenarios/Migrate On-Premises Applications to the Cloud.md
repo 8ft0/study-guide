@@ -1,4 +1,4 @@
-# Scenario 2: Migrate On-Premises Applications to the Cloud
+# Migrate On-Premises Applications to the Cloud
 
 **Task:** Plan the migration of a company's on-premises applications to AWS.
 

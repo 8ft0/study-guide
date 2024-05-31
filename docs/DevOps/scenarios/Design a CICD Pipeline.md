@@ -1,4 +1,4 @@
-# Scenario 1: Design a CI/CD Pipeline
+# Design a CI/CD Pipeline
 
 **Task:** Design a CI/CD pipeline for deploying a microservices application to a Kubernetes cluster.
 

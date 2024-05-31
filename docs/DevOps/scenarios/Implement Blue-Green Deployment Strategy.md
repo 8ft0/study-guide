@@ -1,4 +1,4 @@
-# Scenario 5: Implement Blue-Green Deployment Strategy
+# Implement Blue-Green Deployment Strategy
 
 **Task:** Design a blue-green deployment strategy for a web application hosted on AWS.
 
