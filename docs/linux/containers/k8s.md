@@ -1,4 +1,4 @@
-### Kubernetes Command Line Syntax Cheat Sheet
+### Kubernetes Command Line Syntax Study Sheet
 
 **Purpose**: To provide a quick reference for commonly used Kubernetes (kubectl) commands.
 
@@ -149,4 +149,4 @@
   kubectl get pods -l <label-key>=<label-value>
   ```
 
-By using this cheat sheet, new starters can efficiently navigate Kubernetes command line operations and perform essential tasks with confidence.
+By using this study sheet, new starters can efficiently navigate Kubernetes command line operations and perform essential tasks with confidence.

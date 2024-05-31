@@ -1,4 +1,4 @@
-### Systemd Service Management Cheat Sheet
+### Systemd Service Management Study Sheet
 
 **Purpose**: To provide a quick reference for managing system services using `systemd` on a Linux system.
 
@@ -173,4 +173,4 @@
       sudo systemctl set-default graphical.target
       ```
 
-By using this cheat sheet, new starters can effectively manage system services using `systemd`, ensuring proper operation and configuration of essential system services.
+By using this study sheet, new starters can effectively manage system services using `systemd`, ensuring proper operation and configuration of essential system services.

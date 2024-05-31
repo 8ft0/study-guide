@@ -1,4 +1,4 @@
-### Linux File Permissions Cheat Sheet
+### Linux File Permissions Study Sheet
 
 **Purpose**: To provide a quick reference for understanding and managing file permissions in Linux.
 
@@ -131,4 +131,4 @@
       chmod 1755 <directory>  # Sticky bit
       ```
 
-By using this cheat sheet, new starters can effectively manage and understand file permissions in Linux, ensuring proper access control and security.
+By using this study sheet, new starters can effectively manage and understand file permissions in Linux, ensuring proper access control and security.

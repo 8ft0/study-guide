@@ -1,4 +1,4 @@
-### Linux Process Management Cheat Sheet
+### Linux Process Management Study Sheet
 
 **Purpose**: To provide a quick reference for managing processes on a Linux system.
 
@@ -167,4 +167,4 @@
    pkill <process-name>
    ```
 
-By using this cheat sheet, new starters can efficiently manage processes on a Linux system, ensuring proper control over system resources and processes.
+By using this study sheet, new starters can efficiently manage processes on a Linux system, ensuring proper control over system resources and processes.

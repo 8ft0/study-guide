@@ -1,4 +1,4 @@
-### Cron Jobs and Scheduled Tasks Cheat Sheet
+### Cron Jobs and Scheduled Tasks Study Sheet
 
 **Purpose**: To provide a quick reference for creating and managing scheduled tasks using cron on a Linux system.
 
@@ -138,4 +138,4 @@
     - Ensure the script or command works by running it manually before scheduling.
     - Include `echo` statements or logging within the script to verify execution.
 
-By using this cheat sheet, new starters can efficiently create, manage, and troubleshoot cron jobs, ensuring tasks are scheduled and executed as needed on a Linux system.
+By using this study sheet, new starters can efficiently create, manage, and troubleshoot cron jobs, ensuring tasks are scheduled and executed as needed on a Linux system.

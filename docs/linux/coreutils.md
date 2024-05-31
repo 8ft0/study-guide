@@ -1,4 +1,4 @@
-### Coreutils Cheat Sheet
+### Coreutils Study Sheet
 
 **Purpose**: To provide a quick reference for using GNU Core Utilities (coreutils) on a Linux system, covering basic file, text, and system commands.
 
@@ -234,4 +234,4 @@
    tar -xzvf <archive-name>.tar.gz
    ```
 
-By using this cheat sheet, new starters can efficiently perform common file, text, and system operations on a Linux system, leveraging the powerful utilities provided by coreutils.
+By using this study sheet, new starters can efficiently perform common file, text, and system operations on a Linux system, leveraging the powerful utilities provided by coreutils.

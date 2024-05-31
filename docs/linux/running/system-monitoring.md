@@ -1,4 +1,4 @@
-### Linux System Monitoring Cheat Sheet
+### Linux System Monitoring Study Sheet
 
 **Purpose**: To provide a quick reference for monitoring system performance and resource usage on a Linux system.
 
@@ -168,4 +168,4 @@
     - **Grafana**:
         - Install and configure Grafana for data visualization.
 
-By using this cheat sheet, new starters can efficiently monitor system performance and resource usage on a Linux system, ensuring optimal operation and quick troubleshooting.
+By using this study sheet, new starters can efficiently monitor system performance and resource usage on a Linux system, ensuring optimal operation and quick troubleshooting.

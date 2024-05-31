@@ -1,4 +1,4 @@
-### Security and Access Control Cheat Sheet
+### Security and Access Control Study Sheet
 
 **Purpose**: To provide a quick reference for enhancing security and managing access control on a Linux system.
 
@@ -252,4 +252,4 @@
       sudo systemctl restart rsyslog
       ```
 
-By using this cheat sheet, new starters can effectively secure and manage access control on a Linux system, ensuring proper protection and monitoring of the system.
+By using this study sheet, new starters can effectively secure and manage access control on a Linux system, ensuring proper protection and monitoring of the system.

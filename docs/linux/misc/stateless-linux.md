@@ -1,4 +1,4 @@
-### Stateless Linux Systems Cheat Sheet
+### Stateless Linux Systems Study Sheet
 
 **Purpose**: To provide a quick reference for understanding and managing stateless Linux systems, where system state is not preserved across reboots.
 
@@ -114,4 +114,4 @@
   - **Limited Customization**: Users cannot make permanent changes.
   - **Data Management**: Requires careful planning for data persistence.
 
-By using this cheat sheet, new starters can efficiently understand and set up stateless Linux systems, ensuring proper implementation and management of such environments.
+By using this study sheet, new starters can efficiently understand and set up stateless Linux systems, ensuring proper implementation and management of such environments.

@@ -1,4 +1,4 @@
-### Linux Networking Configuration Cheat Sheet
+### Linux Networking Configuration Study Sheet
 
 **Purpose**: To provide a quick reference for configuring and managing network settings on a Linux system.
 
@@ -216,4 +216,4 @@
    curl -I <url>
    ```
 
-By using this cheat sheet, new starters can efficiently configure and manage network settings on a Linux system, ensuring proper connectivity and network performance.
+By using this study sheet, new starters can efficiently configure and manage network settings on a Linux system, ensuring proper connectivity and network performance.

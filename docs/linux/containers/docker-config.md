@@ -1,4 +1,4 @@
-### Docker Configuration Cheat Sheet
+### Docker Configuration Study Sheet
 
 **Purpose**: To provide a quick reference for configuring Docker on a Linux system.
 
@@ -174,4 +174,4 @@
       docker stack deploy -c docker-compose.yml <stack-name>
       ```
 
-By using this cheat sheet, new starters can effectively configure Docker on a Linux system, ensuring proper setup and management of Docker environments.
+By using this study sheet, new starters can effectively configure Docker on a Linux system, ensuring proper setup and management of Docker environments.

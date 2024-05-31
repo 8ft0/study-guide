@@ -1,4 +1,4 @@
-### Linux DNS Configuration Cheat Sheet
+### Linux DNS Configuration Study Sheet
 
 **Purpose**: To provide a quick reference for configuring DNS settings on a Linux system.
 
@@ -124,4 +124,4 @@
       sudo systemctl restart dnsmasq
       ```
 
-By using this cheat sheet, new starters can efficiently configure and manage DNS settings on a Linux system, ensuring proper network resolution and connectivity.
+By using this study sheet, new starters can efficiently configure and manage DNS settings on a Linux system, ensuring proper network resolution and connectivity.

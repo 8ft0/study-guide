@@ -1,4 +1,4 @@
-### Docker Command Line Syntax and Configuration Cheat Sheet
+### Docker Command Line Syntax and Configuration Study Sheet
 
 **Purpose**: To provide a quick reference for using Docker command line tools and configuring Docker on a Linux system.
 
@@ -235,4 +235,4 @@
    docker image prune
    ```
 
-By using this cheat sheet, new starters can efficiently manage Docker containers, images, volumes, networks, and configurations, ensuring proper use and maintenance of Docker environments.
+By using this study sheet, new starters can efficiently manage Docker containers, images, volumes, networks, and configurations, ensuring proper use and maintenance of Docker environments.

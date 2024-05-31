@@ -1,4 +1,4 @@
-### Networking Troubleshooting Cheat Sheet
+### Networking Troubleshooting Study Sheet
 
 **Purpose**: To provide a quick reference for diagnosing and resolving network issues on a Linux system.
 
@@ -228,4 +228,4 @@
 3. **Hardware Issues**:
     - Check for hardware problems such as faulty cables, network cards, or switches.
 
-By using this cheat sheet, new starters can efficiently diagnose and resolve network issues on a Linux system, ensuring proper network connectivity and performance.
+By using this study sheet, new starters can efficiently diagnose and resolve network issues on a Linux system, ensuring proper network connectivity and performance.

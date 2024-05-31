@@ -1,4 +1,4 @@
-### Linux Disk Management Cheat Sheet
+### Linux Disk Management Study Sheet
 
 **Purpose**: To provide a quick reference for managing disks and filesystems on a Linux system.
 
@@ -188,4 +188,4 @@
    sudo pvremove /dev/sdX1
    ```
 
-By using this cheat sheet, new starters can effectively manage disks and filesystems on a Linux system, ensuring proper storage configuration and maintenance.
+By using this study sheet, new starters can effectively manage disks and filesystems on a Linux system, ensuring proper storage configuration and maintenance.

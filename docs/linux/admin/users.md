@@ -1,4 +1,4 @@
-### Linux User Configuration Cheat Sheet
+### Linux User Configuration Study Sheet
 
 **Purpose**: To provide a quick reference for managing user accounts and groups on a Linux system.
 
@@ -156,4 +156,4 @@
    lastlog -u <username>
    ```
 
-By using this cheat sheet, new starters can efficiently manage user and group configurations on a Linux system, ensuring proper account setup and maintenance.
+By using this study sheet, new starters can efficiently manage user and group configurations on a Linux system, ensuring proper account setup and maintenance.

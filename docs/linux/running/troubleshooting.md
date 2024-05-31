@@ -1,4 +1,4 @@
-### Debugging/Troubleshooting Skills Cheat Sheet
+### Debugging/Troubleshooting Skills Study Sheet
 
 **Purpose**: To provide a quick reference for debugging and troubleshooting at the application, infrastructure/system, and Linux levels.
 
@@ -207,4 +207,4 @@
 4. **Consult Documentation**:
     - Refer to application and system documentation for specific error codes and troubleshooting steps.
 
-By using this cheat sheet, new starters can effectively diagnose and resolve issues at the application, infrastructure/system, and Linux levels, ensuring smooth operation and minimal downtime.
+By using this study sheet, new starters can effectively diagnose and resolve issues at the application, infrastructure/system, and Linux levels, ensuring smooth operation and minimal downtime.

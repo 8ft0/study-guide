@@ -1,4 +1,4 @@
-### Kubernetes on Bare Metal Cheat Sheet
+### Kubernetes on Bare Metal Study Sheet
 
 **Purpose**: To provide a quick reference for setting up and managing Kubernetes on bare metal servers.
 
@@ -174,4 +174,4 @@
       sudo systemctl restart kubelet
       ```
 
-By using this cheat sheet, new starters can efficiently set up and manage a Kubernetes cluster on bare metal servers, ensuring proper configuration and maintenance of the cluster.
+By using this study sheet, new starters can efficiently set up and manage a Kubernetes cluster on bare metal servers, ensuring proper configuration and maintenance of the cluster.

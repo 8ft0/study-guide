@@ -1,4 +1,4 @@
-### Linux Backup and Recovery Cheat Sheet
+### Linux Backup and Recovery Study Sheet
 
 **Purpose**: To provide a quick reference for performing backup and recovery tasks on a Linux system.
 
@@ -152,4 +152,4 @@
 4. **Testing**: Regularly test backup and recovery processes to ensure reliability.
 5. **Documentation**: Document backup and recovery procedures for easy reference.
 
-By using this cheat sheet, new starters can effectively manage backup and recovery tasks on a Linux system, ensuring data integrity and availability.
+By using this study sheet, new starters can effectively manage backup and recovery tasks on a Linux system, ensuring data integrity and availability.
