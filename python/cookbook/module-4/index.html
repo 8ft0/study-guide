@@ -1,0 +1,3994 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../module-3/">
+      
+      
+        <link rel="next" href="../../string%20manipulation/Alternating%20Characters/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Problem Solving - Study Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#problem-solving" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Study Guide" class="md-header__button md-logo" aria-label="Study Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Study Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Problem Solving
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../DevOps/scenarios/Design%20a%20CICD%20Pipeline/" class="md-tabs__link">
+          
+  
+  DevOps
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../SRE/also/" class="md-tabs__link">
+          
+  
+  SRE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../System%20Design/HTTP/" class="md-tabs__link">
+          
+  
+  System Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../bash/Log%20File%20Analysis/Aggregate%20Error%20Count%20in%20Log%20Messages/" class="md-tabs__link">
+          
+  
+  Bash
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../linux/coreutils/" class="md-tabs__link">
+          
+  
+  Linux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../challenges/Aggregate%20Error%20Count%20in%20Log%20Messages/" class="md-tabs__link">
+          
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tips/busybox/" class="md-tabs__link">
+          
+  
+  Tips
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Study Guide" class="md-nav__button md-logo" aria-label="Study Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Study Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DevOps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Scenarios
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Scenarios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20CICD%20Pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a CI/CD Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20High%20Availability%20Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a High Availability Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20Kubernetes-based%20Microservices%20Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a Kubernetes-based Microservices Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20Logging%20and%20Monitoring%20System/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a Logging and Monitoring System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20Multi-Region%20Deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a Multi-Region Deployment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Design%20a%20Scalable%20Logging%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design a Scalable Logging Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Implement%20Blue-Green%20Deployment%20Strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement Blue-Green Deployment Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Implement%20Infrastructure%20as%20Code%20%28IaC%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement Infrastructure as Code (IaC)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Implement%20Security%20Best%20Practices%20in%20a%20DevOps%20Pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement Security Best Practices in a DevOps Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Implement%20a%20Zero-Downtime%20Deployment%20Strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement a Zero-Downtime Deployment Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Implementing%20a%20Disaster%20Recovery%20Plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementing a Disaster Recovery Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Migrate%20On-Premises%20Applications%20to%20the%20Cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migrate On-Premises Applications to the Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DevOps/scenarios/Secure%20a%20CICD%20Pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secure a CI/CD Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SRE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SRE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SRE/also/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Subjects to Anticipate:
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SRE/questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            System Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../System%20Design/HTTP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path of a HTTP request
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../System%20Design/HTTPS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path of a HTTPS request
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bash
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Bash
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Log File Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Log File Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Aggregate%20Error%20Count%20in%20Log%20Messages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Error Count in Log Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Log%20File%20Analysis%20and%20Archive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log File Analysis and Archive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Log%20File%20Analysis%20with%20Error%20Distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log File Analysis with Error Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Log%20File%20Filtering%20and%20Compression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log File Filtering and Compression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Log%20File%20and%20Tarball%20Manipulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log File and Tarball Manipulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/Log%20File%20Analysis/Parse%20Logs%20and%20Count%20Events%20by%20Severity%20Level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parse Logs and Count Events by Severity Level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/misc/Automated%20User%20Metrics%20Collection%20and%20Alerting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SRE Challenge: Automated User Metrics Collection and Alerting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/misc/File%20Metadata%20Organisation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Metadata Organisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/misc/Script-Based%20User%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Script-Based User Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/monitoring/Disk%20Space%20Monitoring%20Script/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disk Space Monitoring Script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/monitoring/Monitoring%20and%20Alerting%20for%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoring and Alerting for Acme Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/monitoring/Service%20Health%20Check%20and%20Alert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acme Service Health Check and Alert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/monitoring/System%20Resource%20Monitoring%20and%20Alerting%20Script/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Resource Monitoring and Alerting Script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bash/monitoring/System%20Resource%20Monitoring%20and%20Alerting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Resource Monitoring and Alerting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/coreutils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coreutils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Admin
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Admin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/backup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/cron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/disk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/systemd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemd
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/admin/users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Containers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/containers/container-like/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Container like
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/containers/docker-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/containers/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/containers/k8s-bare-metal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    K8s bare metal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/containers/k8s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    K8s
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/misc/stateless-linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stateless linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Networking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/networking/DNS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/networking/network-troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/networking/networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quizes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Quizes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/DNS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Kubernetes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kubernetes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Linux%20File%20Permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux File Permissions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Networking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Stateless%20Linux%20Systems%3A/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stateless Linux Systems:
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/quizes/Users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Running
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            Running
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/running/linux-process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux process
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/running/system-monitoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/running/top/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    top
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../linux/running/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Challenges
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            Challenges
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Aggregate%20Error%20Count%20in%20Log%20Messages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Error Count in Log Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Binary%20Search/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Challenge: Binary Search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Intersection%20of%20Two%20Arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intersection of Two Arrays
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Matching%20Substrings%20in%20a%20String/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matching Substrings in a String
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Palindromic%20Substring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Longest Palindromic Substring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Parse%20Logs%20and%20Count%20Events%20by%20Severity%20Level/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parse Logs and Count Events by Severity Level
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Priority%20Queue%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priority Queue Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Puzzle%209/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Puzzle 3x3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenges/Sum%20of%20Two%20Numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sum of Two Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cookbook
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cookbook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Coding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Manipulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementation Efficiency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Problem Solving
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Problem Solving
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-greedy-algorithm-example-minimum-coins-for-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Greedy Algorithm Example: Minimum Coins for Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-divide-and-conquer-example-maximum-subarray-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Divide and Conquer Example: Maximum Subarray Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-two-pointers-example-pair-with-target-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Two Pointers Example: Pair with Target Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-using-hashmaps-example-count-distinct-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Using Hashmaps Example: Count Distinct Elements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-subarray-sum-equals-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Subarray Sum Equals K
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      6: Longest Substring Without Repeating Characters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-minimum-window-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      7: Minimum Window Substring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-coin-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      8: Coin Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-container-with-most-water" class="md-nav__link">
+    <span class="md-ellipsis">
+      9: Container With Most Water
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-longest-palindromic-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      10: Longest Palindromic Substring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-merge-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      11: Merge Intervals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-three-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      12: Three Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-word-break" class="md-nav__link">
+    <span class="md-ellipsis">
+      13: Word Break
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-top-k-frequent-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      14: Top K Frequent Elements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    String manipulation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            String manipulation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Alternating%20Characters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternating Characters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Anagram%20Difference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anagram Difference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Count%20Palindromic%20Subsequences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Count Palindromic Subsequences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Longest%20Substring%20Without%20Repeating%20Characters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Longest Substring Without Repeating Characters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Longest%20Substring%20with%20At%20Most%20K%20Distinct%20Characters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Longest Substring with At Most K Distinct Characters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Minimum%20Window%20Substring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Minimum Window Substring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Palindrome%20Index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Palindrome Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../string%20manipulation/Reverse%20Vowel%20Swap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reverse Vowel Swap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tips
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Tips
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tips/busybox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Busybox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tips/hackerrank-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HackerRank Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tips/hackerrank-shell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HackerRank Shell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-greedy-algorithm-example-minimum-coins-for-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Greedy Algorithm Example: Minimum Coins for Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-divide-and-conquer-example-maximum-subarray-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Divide and Conquer Example: Maximum Subarray Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-two-pointers-example-pair-with-target-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Two Pointers Example: Pair with Target Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-using-hashmaps-example-count-distinct-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Using Hashmaps Example: Count Distinct Elements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-subarray-sum-equals-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Subarray Sum Equals K
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      6: Longest Substring Without Repeating Characters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-minimum-window-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      7: Minimum Window Substring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-coin-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      8: Coin Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-container-with-most-water" class="md-nav__link">
+    <span class="md-ellipsis">
+      9: Container With Most Water
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-longest-palindromic-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      10: Longest Palindromic Substring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-merge-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      11: Merge Intervals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-three-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      12: Three Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-word-break" class="md-nav__link">
+    <span class="md-ellipsis">
+      13: Word Break
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-top-k-frequent-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      14: Top K Frequent Elements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="problem-solving">Problem Solving</h1>
+<p>Comprehensive examples for each of the key techniques mentioned in the document: Greedy algorithms, Divide and Conquer, Two Pointers, and the use of hashmaps. These examples will focus on applying these techniques to solve common types of problems efficiently.</p>
+<h3 id="1-greedy-algorithm-example-minimum-coins-for-change">1. Greedy Algorithm Example: Minimum Coins for Change</h3>
+<p><strong>Problem Statement</strong>: Given an array of coin denominations and a total amount, find the minimum number of coins needed to make up that amount.</p>
+<p><strong>Python Solution</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">minCoins</span><span class="p">(</span><span class="n">coins</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+    <span class="n">coins</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">coin</span> <span class="ow">in</span> <span class="n">coins</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">amount</span> <span class="o">//</span> <span class="n">coin</span>
+        <span class="n">amount</span> <span class="o">%=</span> <span class="n">coin</span>
+        <span class="k">if</span> <span class="n">amount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">return</span> <span class="n">count</span> <span class="k">if</span> <span class="n">amount</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">coins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">amount</span> <span class="o">=</span> <span class="mi">63</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minCoins</span><span class="p">(</span><span class="n">coins</span><span class="p">,</span> <span class="n">amount</span><span class="p">))</span>  <span class="c1"># Output will depend on the input values</span>
+</code></pre></div></p>
+<h3 id="2-divide-and-conquer-example-maximum-subarray-sum">2. Divide and Conquer Example: Maximum Subarray Sum</h3>
+<p><strong>Problem Statement</strong>: Find the maximum sum of a contiguous subarray in an array of integers.</p>
+<p><strong>Python Solution</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">maxSubArraySum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">left</span> <span class="o">==</span> <span class="n">right</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span>
+
+    <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">max_left_sum</span> <span class="o">=</span> <span class="n">maxSubArraySum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span><span class="p">)</span>
+    <span class="n">max_right_sum</span> <span class="o">=</span> <span class="n">maxSubArraySum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+    <span class="n">max_cross_sum</span> <span class="o">=</span> <span class="n">crossSum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_left_sum</span><span class="p">,</span> <span class="n">max_right_sum</span><span class="p">,</span> <span class="n">max_cross_sum</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">crossSum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">left_sum</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mid</span><span class="p">,</span> <span class="n">left</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">sum</span> <span class="o">&gt;</span> <span class="n">left_sum</span><span class="p">:</span>
+            <span class="n">left_sum</span> <span class="o">=</span> <span class="nb">sum</span>
+
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right_sum</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">sum</span> <span class="o">&gt;</span> <span class="n">right_sum</span><span class="p">:</span>
+            <span class="n">right_sum</span> <span class="o">=</span> <span class="nb">sum</span>
+
+    <span class="k">return</span> <span class="n">left_sum</span> <span class="o">+</span> <span class="n">right_sum</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">maxSubArraySum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Output: 7</span>
+</code></pre></div></p>
+<h3 id="3-two-pointers-example-pair-with-target-sum">3. Two Pointers Example: Pair with Target Sum</h3>
+<p><strong>Problem Statement</strong>: Given a sorted array and a target sum, find if there is a pair in the array whose sum is equal to the target sum.</p>
+<p><strong>Python Solution</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">twoPointerSum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="n">current_sum</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">current_sum</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">current_sum</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">target</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">twoPointerSum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>  <span class="c1"># Output: (2, 3)</span>
+</code></pre></div></p>
+<h3 id="4-using-hashmaps-example-count-distinct-elements">4. Using Hashmaps Example: Count Distinct Elements</h3>
+<p><strong>Problem Statement</strong>: Count the number of distinct elements in an array.</p>
+<p><strong>Python Solution</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">countDistinct</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">seen</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">countDistinct</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>  <span class="c1"># Output: 5</span>
+</code></pre></div></p>
+<h3 id="5-subarray-sum-equals-k">5. Subarray Sum Equals K</h3>
+<p><strong>Problem Statement:</strong>
+Given an array of integers <code>nums</code> and an integer <code>k</code>, return the total number of continuous subarrays whose sum equals to <code>k</code>.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Output</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">subarrays</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="n">have</span> <span class="nb">sum</span> <span class="n">equals</span> <span class="n">to</span> <span class="mf">2.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">subarray_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">sum_freq</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="n">cur_sum</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+        <span class="n">cur_sum</span> <span class="o">+=</span> <span class="n">num</span>
+        <span class="n">complement</span> <span class="o">=</span> <span class="n">cur_sum</span> <span class="o">-</span> <span class="n">k</span>
+        <span class="k">if</span> <span class="n">complement</span> <span class="ow">in</span> <span class="n">sum_freq</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="n">sum_freq</span><span class="p">[</span><span class="n">complement</span><span class="p">]</span>
+        <span class="n">sum_freq</span><span class="p">[</span><span class="n">cur_sum</span><span class="p">]</span> <span class="o">=</span> <span class="n">sum_freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cur_sum</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">subarray_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># Output: 2</span>
+</code></pre></div></p>
+<p>This problem can be solved using a hashmap to store the cumulative sums encountered so far. We check if the complement of the current sum (i.e., <code>cur_sum - k</code>) exists in the hashmap, indicating the presence of a subarray with sum <code>k</code>.</p>
+<p>This example demonstrates the application of a hashmap to optimize the solution for finding subarrays with a specific sum.</p>
+<p>By practising similar problems and understanding the application of algorithms like greedy, divide and conquer, and two pointers, you can better prepare for the assessment's problem-solving challenges.</p>
+<hr />
+<p>Certainly! Let's explore another problem-solving example for Module 4:</p>
+<h3 id="6-longest-substring-without-repeating-characters">6: Longest Substring Without Repeating Characters</h3>
+<p><strong>Problem Statement:</strong>
+Given a string <code>s</code>, find the length of the longest substring without repeating characters.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcabcbb&quot;</span>
+<span class="n">Output</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">longest</span> <span class="n">substring</span> <span class="n">without</span> <span class="n">repeating</span> <span class="n">characters</span> <span class="ow">is</span> <span class="s2">&quot;abc&quot;</span><span class="p">,</span> <span class="n">which</span> <span class="n">has</span> <span class="n">a</span> <span class="n">length</span> <span class="n">of</span> <span class="mf">3.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">longest_substring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">max_length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">char_index</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Store the index of each character</span>
+
+    <span class="k">for</span> <span class="n">end</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">char_index</span> <span class="ow">and</span> <span class="n">char_index</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">start</span><span class="p">:</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">char_index</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">char_index</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="n">end</span>
+        <span class="n">max_length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">max_length</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcabcbb&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">longest_substring</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  <span class="c1"># Output: 3</span>
+</code></pre></div></p>
+<p>In this problem, we use the two-pointer technique along with a hashmap to efficiently find the longest substring without repeating characters. The <code>start</code> pointer indicates the start of the current substring, and we update it when encountering a repeating character. The <code>char_index</code> hashmap stores the most recent index of each character encountered.</p>
+<p>This example showcases the application of two pointers and a hashmap to optimize the solution for finding the longest substring without repeating characters.</p>
+<hr />
+<h3 id="7-minimum-window-substring">7: Minimum Window Substring</h3>
+<p><strong>Problem Statement:</strong>
+Given two strings <code>s</code> and <code>t</code>, return the minimum window in <code>s</code> which contains all the characters in <code>t</code>. If there is no such window in <code>s</code> that covers all characters in <code>t</code>, return an empty string <code>""</code>.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;ADOBECODEBANC&quot;</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="s2">&quot;ABC&quot;</span>
+<span class="n">Output</span><span class="p">:</span> <span class="s2">&quot;BANC&quot;</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">minimum</span> <span class="n">window</span> <span class="n">substring</span> <span class="s2">&quot;BANC&quot;</span> <span class="n">contains</span> <span class="nb">all</span> <span class="n">characters</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="ow">and</span> <span class="s2">&quot;C&quot;</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="k">def</span> <span class="nf">min_window</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">t</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="n">target_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">required</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_counts</span><span class="p">)</span>
+    <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="n">formed</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">window_counts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+    <span class="k">while</span> <span class="n">right</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+        <span class="n">char</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+        <span class="n">window_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="n">window_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">target_counts</span> <span class="ow">and</span> <span class="n">window_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">==</span> <span class="n">target_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]:</span>
+            <span class="n">formed</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">formed</span> <span class="o">==</span> <span class="n">required</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">ans</span> <span class="o">=</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span>
+            <span class="n">char</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span>
+            <span class="n">window_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">target_counts</span> <span class="ow">and</span> <span class="n">window_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target_counts</span><span class="p">[</span><span class="n">char</span><span class="p">]:</span>
+                <span class="n">formed</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">right</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span> <span class="k">if</span> <span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">s</span><span class="p">[</span><span class="n">ans</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">ans</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;ADOBECODEBANC&quot;</span>
+<span class="n">t</span> <span class="o">=</span> <span class="s2">&quot;ABC&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">min_window</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>  <span class="c1"># Output: &quot;BANC&quot;</span>
+</code></pre></div></p>
+<p>This problem involves finding the minimum window substring in <code>s</code> that contains all characters of <code>t</code>. We use a sliding window approach where we maintain a window containing the characters of <code>s</code> and move the <code>left</code> and <code>right</code> pointers to adjust the window until we find the minimum window containing all characters of <code>t</code>.</p>
+<hr />
+<h3 id="8-coin-change">8: Coin Change</h3>
+<p><strong>Problem Statement:</strong>
+You are given coins of different denominations and a total amount of money <code>amount</code>. Write a function to compute the minimum number of coins needed to make up that amount. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">coins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">amount</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="n">Output</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="mi">11</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">coin_change</span><span class="p">(</span><span class="n">coins</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)]</span> <span class="o">*</span> <span class="p">(</span><span class="n">amount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">coin</span> <span class="ow">in</span> <span class="n">coins</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">coin</span><span class="p">,</span> <span class="n">amount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">coin</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">amount</span><span class="p">]</span> <span class="k">if</span> <span class="n">dp</span><span class="p">[</span><span class="n">amount</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">coins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">amount</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coin_change</span><span class="p">(</span><span class="n">coins</span><span class="p">,</span> <span class="n">amount</span><span class="p">))</span>  <span class="c1"># Output: 3</span>
+</code></pre></div></p>
+<p>In this problem, we use dynamic programming to find the minimum number of coins needed to make up the given amount. We iterate over each coin denomination and update the minimum number of coins needed for each amount from <code>1</code> to <code>amount</code>.</p>
+<p>By practising problems like these and understanding how to implement appropriate algorithms like dynamic programming, you'll be better prepared to optimize solutions for similar challenges in the assessment.</p>
+<hr />
+<h3 id="9-container-with-most-water">9: Container With Most Water</h3>
+<p><strong>Problem Statement:</strong>
+Given <code>n</code> non-negative integers <code>a1, a2, ..., an</code>, where each represents a point at coordinate <code>(i, ai)</code>. <code>n</code> vertical lines are drawn such that the two endpoints of the line <code>i</code> are at <code>(i, ai)</code> and <code>(i, 0)</code>. Find two lines, which, together with the x-axis, form a container such that the container contains the most water.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<span class="n">Output</span><span class="p">:</span> <span class="mi">49</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">maximum</span> <span class="n">area</span> <span class="n">of</span> <span class="n">water</span> <span class="p">(</span><span class="n">highlighted</span> <span class="ow">in</span> <span class="n">blue</span><span class="p">)</span> <span class="n">the</span> <span class="n">container</span> <span class="n">can</span> <span class="n">contain</span> <span class="ow">is</span> <span class="mi">49</span><span class="p">,</span> <span class="n">obtained</span> <span class="n">by</span> <span class="n">selecting</span> <span class="n">the</span> <span class="n">heights</span> <span class="n">of</span> <span class="mi">8</span> <span class="ow">and</span> <span class="mi">7</span> <span class="p">(</span><span class="n">distance</span> <span class="n">between</span> <span class="n">them</span> <span class="ow">is</span> <span class="mi">7</span><span class="p">)</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">max_area</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+    <span class="n">max_area</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">height</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span>
+        <span class="n">current_area</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">height</span><span class="p">[</span><span class="n">left</span><span class="p">],</span> <span class="n">height</span><span class="p">[</span><span class="n">right</span><span class="p">])</span> <span class="o">*</span> <span class="n">width</span>
+        <span class="n">max_area</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_area</span><span class="p">,</span> <span class="n">current_area</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">height</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">max_area</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">max_area</span><span class="p">(</span><span class="n">height</span><span class="p">))</span>  <span class="c1"># Output: 49</span>
+</code></pre></div></p>
+<p>In this problem, we use a two-pointer approach to find the maximum area of water that can be contained by the container formed by the vertical lines. We start with two pointers at the beginning and end of the array and gradually move them towards each other, calculating the area at each step and updating the maximum area found so far.</p>
+<hr />
+<h3 id="10-longest-palindromic-substring">10: Longest Palindromic Substring</h3>
+<p><strong>Problem Statement:</strong>
+Given a string <code>s</code>, return the longest palindromic substring in <code>s</code>.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;babad&quot;</span>
+<span class="n">Output</span><span class="p">:</span> <span class="s2">&quot;bab&quot;</span> <span class="ow">or</span> <span class="s2">&quot;aba&quot;</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">Either</span> <span class="s2">&quot;bab&quot;</span> <span class="ow">or</span> <span class="s2">&quot;aba&quot;</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">longest</span> <span class="n">palindromic</span> <span class="n">substring</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">longest_palindrome</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">max_length</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+        <span class="c1"># Check for odd-length palindromes</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">max_length</span><span class="p">:</span>
+                <span class="n">start</span> <span class="o">=</span> <span class="n">left</span>
+                <span class="n">max_length</span> <span class="o">=</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">left</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">right</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Check for even-length palindromes</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">max_length</span><span class="p">:</span>
+                <span class="n">start</span> <span class="o">=</span> <span class="n">left</span>
+                <span class="n">max_length</span> <span class="o">=</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">left</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">right</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">start</span> <span class="o">+</span> <span class="n">max_length</span><span class="p">]</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;babad&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">longest_palindrome</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  <span class="c1"># Output: &quot;bab&quot; or &quot;aba&quot;</span>
+</code></pre></div></p>
+<p>In this problem, we use the technique of expanding around the center to find the longest palindromic substring. We iterate over each character in the string and treat it as the center of a potential palindrome, expanding outward to check if the substring formed is a palindrome. We repeat this process for both odd-length and even-length palindromes.</p>
+<hr />
+<p>Sure! Let's explore another problem-solving example focusing on implementing an appropriate algorithm:</p>
+<h3 id="11-merge-intervals">11: Merge Intervals</h3>
+<p><strong>Problem Statement:</strong>
+Given a collection of intervals, merge overlapping intervals.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">intervals</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="mi">15</span><span class="p">,</span><span class="mi">18</span><span class="p">]]</span>
+<span class="n">Output</span><span class="p">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="mi">15</span><span class="p">,</span><span class="mi">18</span><span class="p">]]</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">intervals</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="ow">and</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="n">are</span> <span class="n">overlapping</span><span class="p">,</span> <span class="n">so</span> <span class="n">they</span> <span class="n">are</span> <span class="n">merged</span> <span class="n">into</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">merge_intervals</span><span class="p">(</span><span class="n">intervals</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">intervals</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[]</span>
+
+    <span class="n">intervals</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Sort intervals based on the start time</span>
+    <span class="n">merged</span> <span class="o">=</span> <span class="p">[</span><span class="n">intervals</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+
+    <span class="k">for</span> <span class="n">interval</span> <span class="ow">in</span> <span class="n">intervals</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="k">if</span> <span class="n">interval</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">merged</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span>  <span class="c1"># Overlapping intervals</span>
+            <span class="n">merged</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">merged</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">interval</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">merged</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interval</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">merged</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">intervals</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">merge_intervals</span><span class="p">(</span><span class="n">intervals</span><span class="p">))</span>  <span class="c1"># Output: [[1,6],[8,10],[15,18]]</span>
+</code></pre></div></p>
+<p>In this problem, we first sort the intervals based on their start times. Then, we iterate through the sorted intervals and merge overlapping intervals as necessary. If an interval overlaps with the last interval in the merged list, we update the end time of the last interval accordingly. Otherwise, we add the interval to the merged list.</p>
+<hr />
+<p>Certainly! Let's explore another problem-solving example focusing on implementing an appropriate algorithm:</p>
+<h3 id="12-three-sum">12: Three Sum</h3>
+<p><strong>Problem Statement:</strong>
+Given an array <code>nums</code> of n integers, find all unique triplets in the array which gives the sum of zero.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Output</span><span class="p">:</span> <span class="p">[[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">triplets</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="ow">and</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="nb">sum</span> <span class="n">up</span> <span class="n">to</span> <span class="n">zero</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">three_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+    <span class="n">nums</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]:</span>  <span class="c1"># Skip duplicates</span>
+            <span class="k">continue</span>
+        <span class="n">left</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">total</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]])</span>
+                <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">==</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>  <span class="c1"># Skip duplicates</span>
+                    <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="o">==</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]:</span>  <span class="c1"># Skip duplicates</span>
+                    <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">three_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># Output: [[-1, -1, 2], [-1, 0, 1]]</span>
+</code></pre></div></p>
+<p>In this problem, we first sort the array <code>nums</code> to facilitate the two-pointer approach. Then, we iterate through the array and use two pointers to find the triplets whose sum is zero. We skip duplicate elements to avoid duplicate triplets in the result.</p>
+<hr />
+<h3 id="13-word-break">13: Word Break</h3>
+<p><strong>Problem Statement:</strong>
+Given a string <code>s</code> and a dictionary of strings <code>wordDict</code>, determine if <code>s</code> can be segmented into a space-separated sequence of one or more dictionary words.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;leetcode&quot;</span><span class="p">,</span> <span class="n">wordDict</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;leet&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">]</span>
+<span class="n">Output</span><span class="p">:</span> <span class="kc">True</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="s2">&quot;leetcode&quot;</span> <span class="n">can</span> <span class="n">be</span> <span class="n">segmented</span> <span class="n">into</span> <span class="s2">&quot;leet code&quot;</span><span class="o">.</span>
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">word_break</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">wordDict</span><span class="p">):</span>
+    <span class="n">word_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">wordDict</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="p">:</span><span class="n">i</span><span class="p">]</span> <span class="ow">in</span> <span class="n">word_set</span><span class="p">:</span>
+                <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+
+    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;leetcode&quot;</span>
+<span class="n">wordDict</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;leet&quot;</span><span class="p">,</span> <span class="s2">&quot;code&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word_break</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">wordDict</span><span class="p">))</span>  <span class="c1"># Output: True</span>
+</code></pre></div></p>
+<p>In this problem, we use dynamic programming to determine if the given string <code>s</code> can be segmented into words from the dictionary <code>wordDict</code>. We iterate through each position in the string and check if the substring ending at that position can be segmented into words from the dictionary.</p>
+<p>By practising problems like these and understanding how to implement appropriate algorithms like dynamic programming for word segmentation, you'll be better prepared to optimize solutions for similar challenges in the assessment.</p>
+<hr />
+<h3 id="14-top-k-frequent-elements">14: Top K Frequent Elements</h3>
+<p><strong>Problem Statement:</strong>
+Given a non-empty array of integers <code>nums</code>, return the k most frequent elements.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">Input</span><span class="p">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Output</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">Explanation</span><span class="p">:</span> <span class="n">The</span> <span class="n">elements</span> <span class="mi">1</span> <span class="ow">and</span> <span class="mi">2</span> <span class="n">are</span> <span class="n">the</span> <span class="n">most</span> <span class="n">frequent</span><span class="o">.</span> 
+</code></pre></div></p>
+<p><strong>Solution:</strong>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">import</span> <span class="nn">heapq</span>
+
+<span class="k">def</span> <span class="nf">top_k_frequent</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+    <span class="n">heap</span> <span class="o">=</span> <span class="p">[(</span><span class="o">-</span><span class="n">freq</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">count</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+    <span class="n">heapq</span><span class="o">.</span><span class="n">heapify</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span>
+
+<span class="c1"># Test the solution</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_k_frequent</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># Output: [1, 2]</span>
+</code></pre></div></p>
+<p>In this problem, we use a combination of Counter and heapq to efficiently find the k most frequent elements in the given array <code>nums</code>. We first count the frequency of each element using Counter, then create a max heap (using a min heap with negative frequencies) to store the elements based on their frequencies. Finally, we pop k elements from the heap to get the k most frequent elements.</p>
+<p>By practising problems like these and understanding how to implement appropriate algorithms like heap-based solutions for finding top-k frequent elements, you'll be better prepared to optimize solutions for similar challenges in the assessment.</p>
+<hr />
+<p>These examples cover the fundamental techniques you should be familiar with for our assessment. They emphasize problem solving and efficient implementation, which are crucial for performing well in this module.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/8ft0"  target="_blank" rel="noopener">8ft0.com</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/8ft0" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/8ft0" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/janvarga/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["admonition", "content.code.annotation", "content.code.copy", "content.tabs.link", "navigation.expand", "navigation.instant", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "pymdownx.details", "pymdownx.superfences", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
